@@ -1,0 +1,189 @@
+
+<stack>
+	<stackName>Enl_blog</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>Zaczynam</note>
+		<otxt>Back up 
+
+w stack nie 
+działa.</otxt>
+		<date>04-07-23 10:04:11</date>
+		<tag>chaos;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>Day 2 - Stack nabiera dokładności</note>
+		<otxt>Lecimy</otxt>
+		<date>04-07-23 10:04:11</date>
+		<tag>chaos;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>IT</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>MySQL connection</note>
+		<otxt>$conn = new mysqli($GLOBALS['servername'], $GLOBALS['username'], $GLOBALS['password'], $GLOBALS['dbname']);
+
+if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+}else {
+	$sql = "SHOW TABLES";
+
+	$res = $conn->query($sql);
+	if($res === TRUE){
+		if ($res->num_rows > 0) {
+        		while($row = $res->fetch_assoc()) {
+                        }
+		}
+	}else {
+		die("Connection failed: " . $conn->connect_error);
+	}		
+}
+$conn->close();
+
+</otxt>
+		<date>04-07-23 10:04:11</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>File</note>
+		<otxt>$fp itd</otxt>
+		<date>04-07-23 10:04:11</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>3</note_id>
+		<note>Print error</note>
+		<otxt>ini_displ</otxt>
+		<date>04-07-23 10:04:11</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>4</note_id>
+		<note>Insert special characters in zapytanie</note>
+		<otxt>https://www.sitepoint.com/community/t/mysql-real-escape-string-not-working/5595/2
+
+real-escape-string();</otxt>
+		<date>04-07-23 10:04:11</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>5</note_id>
+		<note>Image print from varriable</note>
+		<otxt>https://stackoverflow.com/questions/3967515/how-to-convert-an-image-to-base64-encoding
+
+</otxt>
+		<date>04-07-23 10:04:12</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>6</note_id>
+		<note>mail - fail</note>
+		<otxt>https://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost
+</otxt>
+		<date>04-07-23 10:06:25</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>7</note_id>
+		<note>php images</note>
+		<otxt>https://www.codexworld.com/store-retrieve-image-from-database-mysql-php/
+</otxt>
+		<date>04-07-23 10:06:45</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>8</note_id>
+		<note>random</note>
+		<otxt>   echo random_int(10000000, 99999999);
+</otxt>
+		<date>04-07-23 10:07:00</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>9</note_id>
+		<note>root I</note>
+		<otxt>
+I - Baza
+1. Zmienne.
+2. Kostrukcje warunkowe.
+3. Tablice.
+4. Pętle.
+5. Operacje na plikach.
+6. Operacje na łańcuchach. 
+7. Obiektowych.
+8. Obsługa wyjątków.
+9. Wyświetlanie błędów.
+
+II - Obsługa baz danych. 
+1. Łączenie z bazą danych.
+
+III - Zawansowane php.
+1. Kontrola sesji.
+2. Interakcja z systemem plików.
+
+IV - Bezpieczeństwo stron internetowy.
+1. Ustawienie stosownych ograniczeń.
+2. Zapis na serverze.
+3. Walidacja formularzy.
+4. Szyfrowanie, hashowanie.
+
+</otxt>
+		<date>04-07-23 10:07:39</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>10</note_id>
+		<note>select last id</note>
+		<otxt>$sqlLastId = "select LAST_INSERT_ID()";
+$lastId = "";
+$resQuery = $conn->query($sqlLastId);
+if ($resQuery->num_rows > 0) {
+	while($row = $resQuery->fetch_assoc()) {
+        	$lastId = $row['LAST_INSERT_ID()'];
+	} 
+}else {
+	die("Connection failed2: " . $conn->connect_error);
+}</otxt>
+		<date>04-07-23 10:07:58</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>11</note_id>
+		<note>skanowanie folderu</note>
+		<otxt>//skanuje elementy z folderu posts znajdującego się w tym samym folderz co kod
+//code.php, posts
+//skanowanie zawartości posts
+
+$sd = scandir("./posts");
+
+foreach ($sd as $el){
+    if (strcmp($el, ".") != 0 </otxt>
+		<date>04-07-23 10:08:15</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>12</note_id>
+		<note>string apostrof</note>
+		<otxt>echo </otxt>
+		<date>04-07-23 10:08:38</date>
+		<tag>php;</tag>
+	</rec>
+
+</stack>

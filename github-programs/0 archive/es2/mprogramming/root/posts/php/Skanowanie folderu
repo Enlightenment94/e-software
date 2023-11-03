@@ -1,0 +1,13 @@
+<pre>
+//skanuje elementy z folderu posts znajdującego się w tym samym folderz co kod
+//code.php, posts
+//skanowanie zawartości posts
+
+$sd = scandir("./posts");
+
+foreach ($sd as $el){
+    if (strcmp($el, ".") != 0 && strcmp($el,  "..") != 0){
+        echo $el . "\n";
+    }
+}
+<pre>

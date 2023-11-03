@@ -1,0 +1,12 @@
+<input class='testRadioClass' id='testRadioId' type='radio' name='testRadio' value='TestValue'/>
+<label for='testRadioId'>TestRadio</label>
+</br>
+<script>
+let el = document.getElementsByClassName('testRadioClass');
+document.write("el.value " + el[0].value);
+document.write("</br>");
+
+let elId = document.getElementById('testRadioId');
+document.write("elId.value " + elId.value);
+
+</script>

@@ -1,0 +1,16 @@
+.githubLink{
+    color: rgba(105, 255, 105, 0.6); 
+    text-shadow: 1px 1px rgba(105, 205, 105, 0.6); 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.githubLink:hover{
+    color: white;
+}
+
+.header{
+    color: rgba(105, 255, 105, 0.6); 
+    text-shadow: 1px 1px rgba(105, 205, 105, 0.6); 
+    text-align: center;
+}

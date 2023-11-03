@@ -1,0 +1,4 @@
+<pre>
+echo 'Here goes your message with an apostrophe S like thi\'s ' . "</br>";
+echo "Here goes your message with an apostrophe S like thi's \"";
+</pre>

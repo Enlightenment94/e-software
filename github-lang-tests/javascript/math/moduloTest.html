@@ -1,0 +1,88 @@
+<script>
+console.log(4 % 3)      // 1
+console.log(10 % 7)     // 3
+console.log(78 % 14)    // 8
+console.log(1000 % 10)  // 0
+var checkSum = 210501700012345678131468;
+console.log(BigInt(checkSum) % BigInt(97));
+//210501700012345678131468 mod 97 = 1
+//Result: 66
+function moduloTest1(divident, divisor) {
+    var partLength = 10;
+
+    while (divident.length > partLength) {
+        var part = divident.substring(0, partLength);
+        divident = (part % divisor) +  divident.substring(partLength);          
+    }
+
+    return divident % divisor;
+}
+console.log(moduloTest1(checkSum, 97) + " BAD need 1")
+
+function moduloTest2(divident, divisor) {
+    var cDivident = '';
+    var cRest = '';
+
+    for (var i in divident ) {
+        var cChar = divident[i];
+        var cOperator = cRest + '' + cDivident + '' + cChar;
+
+        if ( cOperator < parseInt(divisor) ) {
+                cDivident += '' + cChar;
+        } else {
+                cRest = cOperator % divisor;
+                if ( cRest == 0 ) {
+                    cRest = '';
+                }
+                cDivident = '';
+        }
+
+    }
+    cRest += '' + cDivident;
+    if (cRest == '') {
+        cRest = 0;
+    }
+    return cRest;
+}
+
+console.log(moduloTest2(checkSum, 97) + " BAD need 1")
+
+function moduloTest3( aNumStr, aDiv){
+	var tmp = "";
+	var  i, r;
+	for ( i=0; i<aNumStr.length ; i++)
+	{
+		tmp += aNumStr.charAt( i);
+		r = tmp % aDiv;
+		tmp = r.toString( 10);
+	}
+	return tmp / 1;
+
+}
+console.log(moduloTest3(checkSum, 97) + " Test3 BAD need 1")
+
+// Function to compute num (mod a)
+function mod(num, a){
+     
+    // Initialize result
+    let res = 0;
+ 
+    // One by one process
+    // all digits of 'num'
+    for(let i = 0; i < num.length; i++)
+        res = (res * 10 +
+            parseInt(num[i])) % a;
+ 
+    return res;
+}
+ 
+// Driver Code
+let num = "12316767678678";
+ 
+//document.write(mod(num, 10));
+document.write(mod("210501700012345678131468", "97"));
+document.write("</br>");
+document.write(mod("1.699059764806151e+123", "97"));
+document.write("</br>");
+document.write(mod("1699059764806151022727030539690123777433347073461342059129760938032403625477746927079761074095696299719267812448798156783616160", "221"));
+</script>

@@ -1,0 +1,25 @@
+Implementacja RSA skupia się na stworzeniu.
+1. Generatora liczb pierwszych.
+2. Zrozumienie wykonania działania inverse Modulo.
+3. Zrozumienie wykonania działania modulo Power.
+
+Przeszkodą jest operacja pow na liczbach nie mieszących się nawet zakresie BigInt.
+Najdłużej trwa generowanie liczby e, ponieważ Miller-Riben test algorithm jest dość szybkie, lecz po omacku generuję duże liczby pierwsze, które sprawdza wygenerowanie liczby e przy 600 digts czyli około 2048b trwa kilkanaście sekund. Dla ułatwienia liczba e biorą jakąś popularną 65537 w ten sposób skracając czas algorytmu do mniej niż 1 sekundy. 
+
+RSA: 
+https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+https://en.wikipedia.org/wiki/RSA_numbers
+https://www.geeksforgeeks.org/rsa-algorithm-cryptography/
+
+Greatest common divisor:
+https://en.wikipedia.org/wiki/Greatest_common_divisor
+
+Prime generator:
+https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/
+
+ModuloPow:
+https://en.wikipedia.org/wiki/Modular_exponentiation
+
+InverseModulo:
+https://en.wikipedia.org/wiki/Modular_multiplicative_inverse
+https://stackoverflow.com/questions/16310871/how-to-find-d-given-p-q-and-e-in-rsa

@@ -1,0 +1,15 @@
+<script>
+var worker = new Worker('background.js');
+
+// rejestracja obsługi zdarzenia 'message' wysłanego przez 'worker'
+worker.addEventListener('message', function(e) {
+    alert('otrzymano odpowiedź: ' + e.data);
+}, false);
+
+// wyslanie wiadomosci start
+worker.postMessage('start');
+
+// wyslanie wiadomosci stop
+worker.postMessage('stop');
+
+</script>

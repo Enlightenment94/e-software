@@ -1,0 +1,18 @@
+<div id='el'></div>
+
+<script>
+document.getElementById('el').innerHTML = 'Okay';
+
+var worker = new Worker('background2.js');
+
+// rejestracja obsługi zdarzenia 'message' wysłanego przez 'worker'
+worker.addEventListener('message', function(e) {
+    alert('otrzymano odpowiedź: ' + e.data);
+}, false);
+
+// wyslanie wiadomosci start
+worker.postMessage('start');
+
+// wyslanie wiadomosci stop
+worker.postMessage('stop');
+</script>

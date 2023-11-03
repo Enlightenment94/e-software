@@ -1,0 +1,597 @@
+
+<stack>
+	<stackName>Enl_blog</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>Zaczynam</note>
+		<otxt>Stack nie działa wielu elementach.</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>chaos;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>Stack nabiera dokładności</note>
+		<otxt>Usunięcie wszystkich problemów tesktowych.
+
+URI javascript enocode
+MySQL escape_string ...</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>chaos;</tag>
+	</rec>
+
+	<rec>
+		<note_id>3</note_id>
+		<note>Worker</note>
+		<otxt>Problem z klasą Worker w javascript jest taki, że nie widzi 
+doucment.getElementById(''); z poziomu swego wnętrza.</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>chaos;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>IT</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>MySQL connection</note>
+		<otxt>$conn = new mysqli($GLOBALS['servername'], $GLOBALS['username'], $GLOBALS['password'], $GLOBALS['dbname']);
+
+if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+}else {
+	$sql = "SHOW TABLES";
+
+	$res = $conn->query($sql);
+	if($res === TRUE){
+		if ($res->num_rows > 0) {
+        		while($row = $res->fetch_assoc()) {
+                        }
+		}
+	}else {
+		die("Connection failed: " . $conn->connect_error);
+	}		
+}
+$conn->close();
+
+</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>File</note>
+		<otxt>$fp itd</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>3</note_id>
+		<note>Print error</note>
+		<otxt>ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>4</note_id>
+		<note>Insert special characters in zapytanie</note>
+		<otxt>https://www.sitepoint.com/community/t/mysql-real-escape-string-not-working/5595/2
+
+real-escape-string();</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>5</note_id>
+		<note>Image print from varriable</note>
+		<otxt>https://stackoverflow.com/questions/3967515/how-to-convert-an-image-to-base64-encoding
+
+</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>6</note_id>
+		<note>mail - fail</note>
+		<otxt>https://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost
+</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>7</note_id>
+		<note>php images</note>
+		<otxt>https://www.codexworld.com/store-retrieve-image-from-database-mysql-php/
+</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>8</note_id>
+		<note>random</note>
+		<otxt>echo random_int(10000000, 99999999);
+</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>9</note_id>
+		<note>root I</note>
+		<otxt>
+I - Baza
+1. Zmienne.
+2. Kostrukcje warunkowe.
+3. Tablice.
+4. Pętle.
+5. Operacje na plikach.
+6. Operacje na łańcuchach. 
+7. Obiektowych.
+8. Obsługa wyjątków.
+9. Wyświetlanie błędów.
+
+II - Obsługa baz danych. 
+1. Łączenie z bazą danych.
+
+III - Zawansowane php.
+1. Kontrola sesji.
+2. Interakcja z systemem plików.
+
+IV - Bezpieczeństwo stron internetowy.
+1. Ustawienie stosownych ograniczeń.
+2. Zapis na serverze.
+3. Walidacja formularzy.
+4. Szyfrowanie, hashowanie.
+
+</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>10</note_id>
+		<note>select last id</note>
+		<otxt>$sqlLastId = "select LAST_INSERT_ID()";
+$lastId = "";
+$resQuery = $conn->query($sqlLastId);
+if ($resQuery->num_rows > 0) {
+	while($row = $resQuery->fetch_assoc()) {
+        	$lastId = $row['LAST_INSERT_ID()'];
+	} 
+}else {
+	die("Connection failed2: " . $conn->connect_error);
+}</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>11</note_id>
+		<note>skanowanie folderu</note>
+		<otxt>//skanuje elementy z folderu posts znajdującego się w tym samym folderz co kod
+//code.php, posts
+//skanowanie zawartości posts
+
+$sd = scandir("./posts");
+
+foreach ($sd as $el){
+    if (strcmp($el, ".") != 0 </otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>12</note_id>
+		<note>string apostrof</note>
+		<otxt>echo </otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>13</note_id>
+		<note>Make list with header</note>
+		<otxt>https://stackoverflow.com/questions/2417891/how-do-i-semantically-group-a-header-with-a-ul-in-html</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>html;</tag>
+	</rec>
+
+	<rec>
+		<note_id>14</note_id>
+		<note>Particle generator</note>
+		<otxt>https://codepen.io/jkiss/pen/OVEeqK</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>javascript;</tag>
+	</rec>
+
+	<rec>
+		<note_id>15</note_id>
+		<note>Threads - new Worker('script.js')</note>
+		<otxt>https://www.nafrontendzie.pl/wielowatkowy-javascript-web-worker
+
+Workers do NOT have access to:
+
+The DOM (it's not thread-safe)
+The window object
+The document object
+The parent object</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>javascript;</tag>
+	</rec>
+
+	<rec>
+		<note_id>16</note_id>
+		<note>Date</note>
+		<otxt>echo date("d-m-y h:i:s");</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>17</note_id>
+		<note>JavaScript encodeURI()</note>
+		<otxt>https://www.w3schools.com/jsref/jsref_encodeuri.asp</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>javascript;</tag>
+	</rec>
+
+	<rec>
+		<note_id>18</note_id>
+		<note>window onload</note>
+		<otxt>https://www.w3schools.com/jsref/event_onload.asp
+
+</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>javascript;</tag>
+	</rec>
+
+	<rec>
+		<note_id>19</note_id>
+		<note>how print html code like a text</note>
+		<otxt>https://stackoverflow.com/questions/6817262/how-to-display-html-tags-as-plain-text</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>php;html;javascript;</tag>
+	</rec>
+
+	<rec>
+		<note_id>20</note_id>
+		<note>update</note>
+		<otxt>UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;</otxt>
+		<date>06-07-23 04:24:59</date>
+		<tag>MySQL;</tag>
+	</rec>
+
+	<rec>
+		<note_id>21</note_id>
+		<note>Why is the parent div height zero when it has floated children</note>
+		<otxt>https://stackoverflow.com/questions/5369954/why-is-the-parent-div-height-zero-when-it-has-floated-children
+
+Ordinarily, floats aren't counted in the layout of their parents.
+
+To prevent that, add overflow: hidden to the parent.
+</otxt>
+		<date>06-07-23 04:26:37</date>
+		<tag>html;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>SzW</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>Royal fighter MMA</note>
+		<otxt>TURNIEJ I
+1. Walka
+Cep 
+Lowkick
+Wbicie pod klatkę
+Wstanie z gardy biodrami
+Przesweepowany wpadł w trójkąt udusiłem.
+
+2. Walka 
+Trochę bicia
+Uduszony pod klatką z gilotyny.
+
+TURNIEJ II
+1. Walka (Z takim grubszym dzieciakiem, ale w dorosłym wieku)
+Poprzepuszczanie front kick w głowę.
+Wybrano mi kimurę z gardy i wykończono brak sił.
+
+TURNIEJ III
+Z K
+Z tym drugim
+Z R - wygranie przez trójkąt
+
+TURNIEJ IV
+Obserwowanie słabych punktów i przetłuczenie wszystkich.
+Na końcu Murata, kolana, młotkiem.
+
+"Bij lewy z opuszczając prawą." </otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>I;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>ALMMA OFS</note>
+		<otxt>I ALMMA ???
+1. Walka 
+Przepuszczanie wszystkich ciosów.
+Dwa kopnięcia jeden pod rękę, a drugie w głowę.
+W chwili słabości przeciwnika po jego szarżach.
+
+2. Walka
+Przepuszczanie.
+Dostanie sierpa w głowe przeleżenie pod przeciwnikiem do końca.
+</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>I;</tag>
+	</rec>
+
+	<rec>
+		<note_id>3</note_id>
+		<note>ALMMA FC</note>
+		<otxt>I ALMMA FC ???
+Obrona kopnięcia na głowę.
+Walka pod klatką.
+
+II ALMMA FC ???
+
+
+III ALMMA FC ???
+
+IV ALMMA FC ???</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>I;</tag>
+	</rec>
+
+	<rec>
+		<note_id>4</note_id>
+		<note>Plan</note>
+		<otxt>Box  
+Kb - kickbox
+C  - klincz
+Cg - klatka
+Gp - grounder pound
+C  - całość
+Md - medytacja
+
+PL, BI, BR KL TR - 8
+
+Pn  Box 
+Wt  Cg  (Górny, obręcz, dolny, wstawanie)
+Sr  C   (Górny, dolny, obręcz, noga)
+Cz  KB  (Kopnięcia same, akcje kopane)
+Pi  Gp  ()
+Sob C   (Całość)
+Ni </otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>FS;</tag>
+	</rec>
+
+	<rec>
+		<note_id>5</note_id>
+		<note>Oferta</note>
+		<otxt>Szkolenia indywidualne w zakresie MMA, jesteśmy wstanie przekazać fundamentalne zagadnienia techniczne, mentalności sportowców i sztuk walki dzięki, którym będziesz mógł bez trudu dalej sam się rozwijać zmieniając również całe swoje podejście i zacięcie do życia. Wskażemy ci również drogę jeśli będziesz chciał się rozwijać dalej mocna baza to początek wielkiego wzrostu. 
+
+Dla nas najważniejsze jest, by przekazać ci fundamentalne wartości na których będziesz budował oszczędzając ci wielu przykrości i bólu związanego z ich odkrywaniem na własną rękę.
+
+Dostępne kursy:
+  I Box base.
+ II Clinch base.
+III Cage base.
+
+Parter BJJ:
+ I Full surival course.
+II Break guard.
+</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>I;FS;</tag>
+	</rec>
+
+	<rec>
+		<note_id>6</note_id>
+		<note>22AS23</note>
+		<otxt>139 407 135 126 236 406</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>I;FS;II;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>afo</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>"Zmęczenie zabija."</note>
+		<otxt>Zmęczenie jest pierwszym przeciwnikiem wojownika, jeśli przeciwnik będzie miał przewage siłową, będzie mógł zaatakować większymi siłami lub cie skończyć.</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>SzW;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>"API oddziel od request"</note>
+		<otxt>API powinno być niezależne od request, by każdy mógł napisać własne dla servera, a server powinien zwrać odpowiedzi w jakiejśc przejrzystej formie np. XML.</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>IT;</tag>
+	</rec>
+
+	<rec>
+		<note_id>3</note_id>
+		<note>"Przyjaciel nie we wszystkich sprawach będzie twoim przyjacielem, a nawet może okazać się wrogiem."</note>
+		<otxt>Mimo przyjaźni przyjaciela charakter lub czyny mogą być nie adykwatne i wpływać destukcyjne na zamierzane cele mimo, że nie ma złych intencji.</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>SzW;IT;O;</tag>
+	</rec>
+
+	<rec>
+		<note_id>4</note_id>
+		<note>"Odnajdź w życiu coś w czym będziesz chciał być najlepszy."</note>
+		<otxt>To jedyna droga sensownego rozwouje, rozwijanie się całe życie w czymś w czym jest blokada, która na zawsze hamuje twój rozwój nie jest sensowne.</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>O;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>bk</stackName>
+</stack>
+<stack>
+	<stackName>v</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>17.06 FEN 47
+</note>
+		<otxt>Praca na nogach Chinczyka.</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>Fights;UsFights;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>UFC example</note>
+		<otxt>example</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>Fights;UsFights;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>q</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>Dlaczego się bije(MMA)??</note>
+		<otxt>Ścieżka do oświecenia.
+Studiowanie sztuk walki daje szczęście.
+Faceci lubią się bić, rywalizacja.
+Walka z upośledzeniem umysłowym, fizycznym, zdrowotnym.</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>ToYourself;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>Co dziś zrobiłeś jako mistrz?</note>
+		<otxt>I czy w ogóle chcesz nim być?</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>ToYourself;ro;</tag>
+	</rec>
+
+	<rec>
+		<note_id>3</note_id>
+		<note>Czy wygrałeś dzisiejszy dzień?</note>
+		<otxt>I czy w ogóle chcesz nim być?</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>ToYourself;ro;</tag>
+	</rec>
+
+	<rec>
+		<note_id>4</note_id>
+		<note>W czym chcesz być najelpszy?</note>
+		<otxt>Przemyśl w jakiej dziedzinie w czym chcesz być najlepszy wybierz tą w której rozwijaniu nie będziesz czuł żadnych ograniczeń.</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>ToYourself;ro;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>links</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>CSS template</note>
+		<otxt>https://nicepage.com/css-templates
+
+https://nicepage.com/s/442356/web-developer-resume-css-template</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>chaos;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>Gradient generator</note>
+		<otxt>https://cssgradient.io/</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>chaos;</tag>
+	</rec>
+
+	<rec>
+		<note_id>3</note_id>
+		<note>Dijango course</note>
+		<otxt>https://www.w3schools.com/django/django_install_django.php</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>chaos;tutorials;</tag>
+	</rec>
+
+	<rec>
+		<note_id>4</note_id>
+		<note>Free hosting flask</note>
+		<otxt>https://www.youtube.com/watch?v=xTn4DXI8dyc</otxt>
+		<date>06-07-23 02:23:44</date>
+		<tag>chaos;tutorials;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>ENL</stackName>
+</stack>
+<stack>
+	<stackName>Pafo</stackName>
+</stack>
+<stack>
+	<stackName>IT_WAY</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>IT_WAY</note>
+		<otxt>I:
+W korpo jakaś test z java (Fatalnie wyszło, ale nie najgorzej).
+Rozmowa przez telefon (Dziwne tak traktować ludzi).
+W korpo pytania o bootstrapa itp. odrazu aut.
+W korpo z testem z bazami danych. (Test poszedł dobrze i to, by było na tyle)
+
+II:
+php I
+
+26.06.2023
+Stroniarz
+
+"Strona musi dobrze wyglądać."
+"Nowsze technologie niż php, CMS."
+"Python."
+"Nowsze front-endowe na javascript</otxt>
+		<date>06-07-23 02:23:45</date>
+		<tag>WaY;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>love</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>Calendar</note>
+		<otxt>01
+
+02
+
+03
+
+04
+11.04 Happy day P.</otxt>
+		<date>06-07-23 02:23:45</date>
+		<tag>chaos;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>SzW_blog</stackName>
+</stack>

@@ -1,0 +1,18 @@
+<script>
+text = "<record>"
+            + "<username>user_1</username>"
+            + "<message>messsage1</message>" 
+            + "<username>user_2</username>"
+            + "<message>messsage2</message>" 
+      +" </record>"
+
+  var x, i, xmlDoc, txt;
+  var parser = new DOMParser();
+  xmlDoc = parser.parseFromString(text, "text/xml")
+  txt = "";
+  x = xmlDoc.getElementsByTagName("username");
+  for (i = 0; i< x.length; i++) {
+        txt += x[i].childNodes[0].nodeValue + "<br>";
+  }
+  console.log(txt);
+</script>

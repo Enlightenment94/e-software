@@ -1,0 +1,19 @@
+<pre>Zmienne globalne:
+$GLOBALS
+$_SERVER
+$_GET
+$_POST
+$_FILES
+$_COOKIE
+$_SESSION
+$_REQUEST
+$_ENV
+
+//Zmienne lokalne
+function func(){
+ $local = "123";
+}
+
+Źródła
+https://www.php.net/manual/en/language.variables.superglobals.php
+</pre>

@@ -1,0 +1,45 @@
+<pre>Kolejnym zagadnieniem jest dostęp do zmiennych, zmienne lokalne, globalne i dostęp do zmiennych klas. 
+
+Na przykładzie języka Java.
+
+"Zmienna lokalna to taka, która jest wewnątrz funkcji."
+
+class Example {
+    final static double globalVarriable = 3.14
+    public static void main(String[] args) {
+        String localVarriable = "Witaj";
+        System.put.println(Example.globalVarriable);
+    }
+}
+
+"Zmienna globalna to taka, którą widać z poziomu całego kodu."
+
+Definiowanie zmiennej globalnej:
+class Calc {
+    final static double PI = 3.14;
+}
+class Calc {
+    static final double PI = 3.14; //zalecany zapis
+}
+
+Odwołanie do zmiennej:
+System.out.println(Math.PI);
+System.out.println(Math.E);
+
+Dostęp do zmiennych klas. W Java można wyróżnić trzy parametry dostępu do zmiennych klas:
+private
+protected
+public
+
+<b>private</b> oznacza, że mamy dostęp tylko z wnętrza klasy, dla klas potomnych nie.
+
+<b>protected</b> oznacza, że będą dziedziczone, czyli dla klas potomne będą mogły korzystać z zainicjowanych wartości.
+
+<b>public</b> dostęp do pola, funkcji poza klasą.
+
+Domyślnie w Java wszystkie pola są <b>private</b>
+
+Źródła:
+https://www.w3schools.com/java/ref_keyword_protected.asp
+https://javastart.pl/baza-wiedzy/programowanie-obiektowe/static
+</pre>

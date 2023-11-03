@@ -1,0 +1,27 @@
+<rec>
+	<note_id>1</note_id>
+	<note>"Wszystko należy upraszczać jak się da, ale nie bardziej."</note>
+	<author>Albert Einstein</author>
+	<otxt>Upraszczanie jest fundamentem wydajności i oszczędności.</otxt>
+	<date>22-06-23 10:35:56</date>
+	<tag>Albert Einstein;</tag>
+</rec>
+
+<rec>
+	<note_id>2</note_id>
+	<note>"Lepiej dobrą drogą chodź troszeczkę niż złą, a daleko."</note>
+	<author>Platon</author>
+	<otxt></otxt>
+	<date>22-06-23 10:36:37</date>
+	<tag>Platon;</tag>
+</rec>
+
+<rec>
+	<note_id>3</note_id>
+	<note>"Całość to coś więcej niż suma wszystkich elementów."</note>
+	<author>Pitagoras</author>
+	<otxt></otxt>
+	<date>22-06-23 10:37:34</date>
+	<tag>Pitagoras;</tag>
+</rec>
+

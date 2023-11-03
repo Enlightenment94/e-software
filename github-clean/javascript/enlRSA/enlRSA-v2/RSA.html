@@ -1,0 +1,137 @@
+<script src='MRT.js'></script>
+<script src='Random.js'></script>
+<script src='MathRSA.js'></script>
+
+<script>
+//Algorytm Rivesta-Shamira-Adlemana (RSA)
+class RSA{
+    constructor(){
+        this.p = -1n;
+        this.q = -1n;
+        this.n = -1n;
+        this.fi = -1n;
+        this.e = -1n;
+        this.d = -1n;
+    
+        this.eTimeStart = "";
+        this.eTimeEnd = "";
+    }
+    
+    generatePQNFi(digitsP, digitsQ){
+        this.p = BigInt(getRandomPrime(digitsP));
+        this.q = BigInt(getRandomPrime(digitsQ));
+
+        this.n = BigInt(this.p * this.q);
+        this.fi = (this.p-1n)*(this.q-1n);
+    }
+    
+    //(1 < e < φ(n))
+    //Most too cost operation in Algorithms
+    //Realistic time for digits p i q length max 256
+    //https://en.wikipedia.org/wiki/RSA_numbers
+    //RSA-4096 ??? decimal digits (4,096)          <-- no realistic time 
+    //RSA-2048 has 617 decimal digits (2,048 bits) <-- too long 
+    //RSA-310 has 310 decimal digits (1,028 bits)  <-- optimal p i q koło 164
+    //If you not have a time to generate choose number e popular 65537
+    generateE(){
+        let fiLength = this.fi.toString().length;
+        let lowNumber = genLowNumber(fiLength);
+
+        //Random numebr and check prime Miller Riben Test
+        let today = new Date();
+        this.eTimeStart = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+        while(this.e >= this.fi || this.e <= lowNumber ){
+            this.e = BigInt(getRandomPrime(fiLength));
+        }
+
+        today = new Date();
+        this.eTimeEnd = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    }
+
+    //d ≡ e^(−1) (mod λ(n))
+    //Inverse modulo is not possible in normal calculate
+    //We need write specialist function because overflow BigInt 
+    countD(){
+        this.d = BigInt(modInverse(this.e, this.fi));        
+    }
+
+    generatePairKey(){
+        this.generateE();
+        this.countD();
+        let publicKey = new Array(this.n, this.e);
+        let privateKey = new Array(this.n, this.d);
+        return new Array(publicKey, privateKey); 
+    }
+
+    //c = m^(e) mod n 
+    //Pow modulo is not possible in normal calculate 
+    //We need write specialist function because overflow BigInt 
+    encryptSign(msg){
+        if(this.e > -1 && this.n > -1){
+            let encrypted = rightToLeftBinaryModPow(msg, this.e, this.n)
+            return encrypted;
+        }
+        return -1;
+    }
+
+    //...
+    //m = c^(d) mod n
+    decryptSign(msg){
+        if(this.d > -1 && this.n > -1){
+            let decrypted = rightToLeftBinaryModPow(msg, this.d, this.n)
+            return decrypted;
+        }
+        return -1;
+    }
+
+}
+
+
+var rsa = new RSA();
+
+rsa.generatePQNFi(255, 255);
+var keys = rsa.generatePairKey();
+console.log(rsa.eTimeStart);
+console.log(rsa.eTimeEnd);
+console.log("digits: " + rsa.fi.toString().length);
+
+console.log("Pair key:");
+console.log("n: ("+ keys[0][0] + ")");
+console.log("e: ("+ keys[0][1] +")");
+console.log("");
+console.log("n: ("+ keys[1][0] +")");
+console.log("d: ("+ keys[1][1] +")");
+console.log("");
+
+let msg = 13n;
+let encrypted = rsa.encryptSign(msg);
+let decrypted = rsa.decryptSign(encrypted);
+
+console.log("msg : " + msg);
+console.log("");
+console.log("enc : " + encrypted);
+console.log("");
+console.log("dec : " + decrypted);
+
+
+/*
+var x = 7n;
+var y = 17n;
+var p = 3n;
+console.log("x^y mod p");
+console.log(x + "^" + y + " mod " + p);
+console.log(modPow(x, y, p));
+console.log(power(x, y, p));
+console.log("");
+
+var x = 5n;
+var y = 64n;
+var p = 19n;
+console.log("x^y mod p");
+console.log(x + "^" + y + " mod " + p);
+console.log(modPow(x, y, p));
+console.log(power(x, y, p));
+console.log("");
+*/
+</script>

@@ -1,0 +1,456 @@
+<scan>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/StringOp.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/genWpConfig.php</path>
+	</func>
+	<func>
+		<bad>include(</bad>		<path>enlVir/license.txt</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/ls.php</path>
+	</func>
+	<func>
+		<bad>include(</bad>		<path>enlVir/scanDangDefault.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/scanDangDefault.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/scanDangDefault.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/scanDangDefault.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/scanDangDefault.php</path>
+	</func>
+	<func>
+		<bad>include(</bad>		<path>enlVir/scanDangFunc.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/scanDangFunc.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/scanDangFunc.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/scanDangFunc.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/scanDangFunc.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/scanEdit.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/scanPossible.php</path>
+	</func>
+	<func>
+		<bad>include(</bad>		<path>enlVir/testFile/yes.txt</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/viewer.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-admin/admin-header.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/admin.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-admin/includes/ajax-actions.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-admin/includes/class-pclzip.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-admin/includes/class-wp-automatic-updater.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/class-wp-community-events.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/class-wp-community-events.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-admin/includes/class-wp-debug-data.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/class-wp-debug-data.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/class-wp-ms-themes-list-table.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/class-wp-plugins-list-table.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-admin/includes/class-wp-site-health.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/class-wp-site-health.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/credits.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/dashboard.php</path>
+	</func>
+	<func>
+		<bad>include(</bad>		<path>enlVir/wp_cp/wp-admin/includes/deprecated.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-admin/includes/file.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-admin/includes/file.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/file.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/file.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-admin/includes/image.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/image.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/import.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/import.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/misc.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/misc.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/network.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/plugin-install.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/plugin-install.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/plugin.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/schema.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/schema.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/theme.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/update.php</path>
+	</func>
+	<func>
+		<bad>include(</bad>		<path>enlVir/wp_cp/wp-admin/includes/upgrade.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/includes/upgrade.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/includes/upgrade.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/network/upgrade.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-admin/plugins.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-admin/setup-config.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-admin/update-core.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-admin/update.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-content/languages/admin-pl_PL.po</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-content/plugins/akismet/class.akismet-admin.php</path>
+	</func>
+	<func>
+		<bad>include(</bad>		<path>enlVir/wp_cp/wp-content/plugins/akismet/class.akismet.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-content/plugins/akismet/class.akismet.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/ID3/getid3.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/ID3/module.audio.ogg.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/ID3/module.tag.apetag.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/ID3/module.tag.id3v2.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/IXR/class-IXR-message.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/PHPMailer/PHPMailer.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/PHPMailer/PHPMailer.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/PHPMailer/SMTP.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/PHPMailer/SMTP.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/PHPMailer/SMTP.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Author.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Cache/Memcache.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Cache/Memcached.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Caption.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Category.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Copyright.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Credit.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Enclosure.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/File.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Item.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Misc.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Rating.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Restriction.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Sanitize.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/SimplePie/Source.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/Text/Diff.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-includes/block-editor.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/block-supports/elements.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/block-supports/settings.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/blocks/legacy-widget.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/bookmark.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-phpass.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-pop3.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-simplepie.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-snoopy.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-comment-query.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-customize-widgets.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-embed.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-image-editor-imagick.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-network-query.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-oembed-controller.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-query.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-recovery-mode-cookie-service.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-simplepie-sanitize-kses.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-site-query.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-term-query.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-text-diff-renderer-table.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp-theme.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/class-wp.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/cron.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/default-constants.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/default-constants.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-includes/deprecated.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/functions.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/general-template.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-includes/http.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/js/codemirror/codemirror.min.js</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/js/plupload/moxie.js</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/l10n.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/link-template.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/load.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/load.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/media.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/ms-blogs.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/ms-files.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/ms-functions.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/ms-site.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/pluggable.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/pomo/po.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/pomo/streams.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/post.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/query.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/random_compat/byte_safe_strings.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/random_compat/random.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/random_compat/random_bytes_com_dotnet.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php</path>
+	</func>
+	<func>
+		<bad>wp_remote_get</bad>		<path>enlVir/wp_cp/wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/rest-api/endpoints/class-wp-rest-url-details-controller.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php</path>
+	</func>
+	<func>
+		<bad>base64_decode(</bad>		<path>enlVir/wp_cp/wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/rss.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/script-loader.php</path>
+	</func>
+	<func>
+		<bad>ini_</bad>		<path>enlVir/wp_cp/wp-includes/sodium_compat/src/Core/Util.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/taxonomy.php</path>
+	</func>
+	<func>
+		<bad>include(</bad>		<path>enlVir/wp_cp/wp-includes/theme.php</path>
+	</func>
+	<func>
+		<bad>md5(</bad>		<path>enlVir/wp_cp/wp-includes/user.php</path>
+	</func>
+</scan>
+

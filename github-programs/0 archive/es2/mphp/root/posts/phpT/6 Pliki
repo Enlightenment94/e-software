@@ -1,0 +1,9 @@
+<pre>
+$fp = fopen($path, "w");
+fread($fp, );
+fclose($fp);
+
+$fp = fopen($path, "r");
+fwrite($fp, );
+fclose($fp);
+</pre>

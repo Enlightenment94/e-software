@@ -1,0 +1,27 @@
+<script>
+function fermatCheckPrime(isPrime, depth){
+    var i, isPrime, randNumber; // k - dokladnosc, i - zmienna pomocnicza, p - liczba do sprawdzenia, a - losowana liczba
+    var x; // x = a^(p-1), gdzie a jest losowane w każdym obiegu
+     
+    for (i = 0; i < depth; i++){
+        randNumber = Math.floor(Math.random() * isPrime) + 1;
+
+    // obliczamy x = a^(p-1) - uzywamy rzutowania aby doposowac typy zmiennych do definicji funkcji: float pow(float, int) - pozbywamy sie warningow
+        x = Math.pow(randNumber, isPrime-1); 
+        
+        //Obliczamy modulo
+        if (x % isPrime != 1){
+            //cout << "Liczba " << p << " nie jest liczba pierwsza" << endl;
+            console.log(isPrime + " not prime");
+            break;
+        }
+    }
+
+    // jezeli wyszlismy z petli przez nie spelnienie warunku i < k, a nie przez break'a w ifie to liczba jest prawdopodobnie pierwsza
+    if (i == depth){
+        console.log("isPrime " + isPrime + " is prime of currency equal depth " + depth);
+    }
+}
+
+fermatCheckPrime(17,3);
+</script>

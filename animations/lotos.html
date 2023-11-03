@@ -1,0 +1,77 @@
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<style>
+petal {
+  display: inline-block;
+  width: 0; height: 0;
+  padding: 15px 9px;
+  background: rgba(0,0,100,.4);
+  transform: rotate(72deg);
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background: rgba(245, 30, 188, 0.4);
+  position:absolute;
+}
+</style>
+
+</head>
+<body>
+<div id="petals"></div>
+
+<script>
+var global_petal_count = 0;
+var petal_count_per_wave = 15;
+function create (){
+  for(var i=0;i<petal_count_per_wave;i++){
+    var petal_element = document.createElement("petal");
+    petal_element.setAttribute("id", "petal_"+global_petal_count);
+    petal_element.classList.add("slowfall");
+    petal_element.style.top = Math.floor(Math.random() * 1000* -1);
+    petal_element.style.left = Math.floor(Math.random() * window.innerWidth);
+    document.getElementById("petals").appendChild(petal_element);
+    global_petal_count++;
+  }
+  console.log("creating...");
+}
+function resolveLater() {
+  create();
+  var petal_animation = anime.timeline({
+  easing: 'easeInOutSine',
+  duration: 25000,
+  autoplay: true
+  });
+
+  var petal_targets = [];
+
+  for(var i=global_petal_count - petal_count_per_wave + 1;i<=global_petal_count; i++){
+    petal_targets.push("#petal_"+i);
+  }
+
+  petal_animation
+  .add({
+    targets: petal_targets,
+    translateY: 2000,
+    rotate: 1000
+  })
+  .add({
+    targets: petal_targets,
+    opacity: 0,
+  },500)
+
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(resolveLater());
+    }, 5000);
+  });
+
+}
+async function asyncCall() {
+  await resolveLater();
+}
+asyncCall();
+</script>
+</body>
+
+</html>

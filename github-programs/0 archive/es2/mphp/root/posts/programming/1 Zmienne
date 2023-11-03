@@ -1,0 +1,19 @@
+<pre>Podstawą programowanie jest alokacja zmiennych, zwalanianie pamięci i typowanie rozmiaru, typu zmiennych. Typowanie i alokowanie zmiennych jest najczęstrzą i katastrofalną przyczyną problemów z aplikacją, by uchronić programiste przed katastrofalnymi wyciekami pamięci stworzono automatyczne alokowanie zmiennych i typów w takich językach przykładowo jak C# i Java. 
+
+C++ wymaga od nas typowania zmiennych pisząć w C++ i w Java można dostrzec jak automatyczne typowanie i dealkowanie zmiennych upraszcza życie dla programisty.
+
+#C++
+ definiowanie typów konieczne
+ wymagane zarządzanie pamięcią
+
+#JAVA
+ definiowanie typów konieczne
+ automatyczne zarządzanie pamięcią Garbage Collector
+
+#PHP
+ definiowanie typów nie konieczne
+ automatyczne zarządzanie pamięcią Garbage Collector
+ 
+Źródło:
+https://www.php.net/manual/en/features.gc.php
+</pre>

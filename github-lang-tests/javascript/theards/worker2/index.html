@@ -1,0 +1,20 @@
+<div id='doc'></div>
+<div id='pubKeySender'>ds3943j8f34j8f3j4sdddddddddddddddddddddas425</div>
+<div id='pubKeyReciver'>usdnvuibvn9ueijhvn9iun9uwhfnu9dwwnjdas425</div>
+
+<script>
+var worker = new Worker('bg.js');
+
+//Tu już wątek główny ???
+worker.addEventListener('message', function(e) {
+    document.getElementById('doc').innerHTML = "Thread " + e.data;
+}, false);
+
+var pubKeySender = document.getElementById('pubKeySender').innerHTML;
+var pubKeyReciver = document.getElementById('pubKeyReciver').innerHTML;
+var matrix = new Array(pubKeySender, pubKeyReciver);
+
+worker.postMessage('start');
+worker.postMessage(matrix);
+worker.postMessage('stop');
+</script>

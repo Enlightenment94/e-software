@@ -1,0 +1,5 @@
+.button-del{
+    width: 50px;
+    background: rgba(105, 255, 105, 0.6);
+    text-shadow: 1px 1px rgb(105 205 105 / 60%);
+}

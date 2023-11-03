@@ -1,0 +1,13 @@
+<pre>Wyjątki czasami chcemy podjąć próbe wykonania ryzykowego kodu by nie zatrzymać dalszego działania kodu dodajemy wyjątek, który możemy następnie obsłużyć klasycznym przykładem jest obsłużenie liczby 0 przez którą nie można dzielić. Co w wielu przypadkach mogłoby wysypać program.
+
+#php
+try{
+//kod do wykonania
+   if($_GET['where'] == 0)
+   {
+     throw new Exception('Błąd 0');
+   }
+}catch(Exception e){
+    echo 'Błąd krytyczny: '.$e->getMessage().'<br/>';
+}
+</pre>

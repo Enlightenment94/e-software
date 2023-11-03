@@ -1,0 +1,47 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+class MyObject{
+  private $prv;
+  public $pub;
+  protected $pro;
+
+  private $varriable;
+
+  function __construct() { 
+     $this->prv = 'test';
+     $a = func_get_args(); 
+     $i = func_num_args(); 
+     if (method_exists($this, $f='__construct'.$i)) { 
+            call_user_func_array(array($this, $f), $a); 
+     } 
+  }
+
+  public function __construct1($arg) {
+    $this->varriable = $arg;
+  }
+
+  public function __construct2($arg1, $arg2) {
+    $this->prv = $arg1;
+    $this->varriable = $arg2;
+  }
+  
+  public function getPrv(){
+    return $this->prv;
+  }
+
+  public function getVarriable(){
+    return $this->varriable;
+  }
+}
+
+$object = new MyObject();
+$object1 = new MyObject("abc");
+$object2 = new MyObject("abc", "123");
+
+echo $object1->getVarriable() . "</br>";
+echo $object2->getVarriable() . "</br>";
+echo $object2->getPrv() . "</br>";
+?>

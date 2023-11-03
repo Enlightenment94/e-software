@@ -1,0 +1,18 @@
+<pre>Instrukcje warunkowe nie różnią się praktycznie w poszczególnych językach. Każdy ma zwrotnice if i switch. Różnica się zaczyna w wnętrzu if kiedy to trzeba porównywać wartości. W zależności od języka.
+
+w php przykładowo jest porównanie typu === co oznacza identyczność to znaczy, że zmienna nie może pasować tylko wartością, ale też typem.
+
+#PHP
+$aFew = 4;
+$some = 4;
+$many = "4";
+if($some === $many ){  
+   echo "false";
+}
+if($some === $aFew ){
+   echo "true";
+}
+
+Źródła:
+https://www.educative.io/answers/difference-between-the-and-operators-in-php
+</pre>

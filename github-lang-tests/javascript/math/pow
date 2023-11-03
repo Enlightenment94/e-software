@@ -1,0 +1,7 @@
+https://www.designcise.com/web/tutorial/what-is-the-math-pow-alternative-for-bigint-values-in-javascript
+
+const pow = (base, exponent) => base ** exponent;
+
+console.log(pow(2n, 10n)); // 1024n
+console.log(pow(12345679n, 2n)); // 152415789971041n
+console.log(pow(18014398509481982n, 2n)); // 324518553658426654725561982648324n

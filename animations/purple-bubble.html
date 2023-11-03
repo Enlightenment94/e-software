@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animacja płatków kwiatów wiśni w JavaScript</title>
+  <style>
+  body {
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #FFE4E1;
+   }
+
+   .cherry-blossom {
+     position: absolute;
+     width: 30px;
+     height: 30px;
+     background-color: pink;
+     border-radius: 50%;
+     z-index: 1;
+     animation: falling 5s linear infinite;
+   }
+
+   @keyframes falling {
+     0% {
+       transform: translateY(-100%);
+       opacity: 0;
+     }
+     25% {
+       opacity: 1;
+     }
+     100% {
+       transform: translateY(100%);
+       opacity: 0;
+     }
+   }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    // Tworzenie animacji dla płatków kwiatów wiśni
+    for (var i = 0; i < 20; i++) {
+      var left = Math.floor(Math.random() * $(window).width());
+      var delay = Math.floor(Math.random() * 3000);
+      var size = Math.floor(Math.random() * 100) + 50;
+
+      // Dodawanie płatków kwiatów wiśni jako divów z klasą "cherry-blossom" do body strony
+      $('body').append('<div class="cherry-blossom"></div>');
+
+      // Animacja płatków kwiatów wiśni
+      $('.cherry-blossom:last').css({
+        'left': left,
+        'animation-delay': delay + 'ms',
+        'width': size,
+        'height': size
+      });
+    }
+  });
+  </script>
+</head>
+<body>
+</body>
+</html>

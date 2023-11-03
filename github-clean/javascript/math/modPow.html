@@ -1,0 +1,48 @@
+<script>
+//https://en.wikipedia.org/wiki/Modular_exponentiation
+//(a ⋅ b) mod m = [(a mod m) ⋅ (b mod m)] mod m
+/*
+function modular_pow(base, exponent, modulus) is
+    if modulus = 1 then
+        return 0
+    c := 1
+    for e_prime = 0 to exponent-1 do
+        c := (c * base) mod modulus
+    return c
+*/
+//Not speed full
+function memoryEfficientModPow(base, exponent, modulo){
+    if(modulo == 1n){
+        return 0n;
+    }else{   
+        let c = 1n;
+        let i = 0n;
+        for(i = 0n; i <= (exponent - 1n); i++){
+            c = (c * base) % modulo;
+        }
+        return c;
+    }
+}
+
+/*
+modPow Right-to-left binary method
+//https://en.wikipedia.org/wiki/Modular_exponentiation
+*/
+function rightToLeftBinaryModPow(b, e, m){
+    if (m == 1n){
+        return 0n;
+    }else{
+        let r = 1n;
+        b = b % m;
+        while (e > 0n){
+            if(e % 2n == 1n){
+                r = (r*b) % m;
+            }
+            b = (b*b) % m;
+            e = e >> 1n;     //--use 'e = math.floor(e / 2)' on Lua 5.2 or older
+        }
+        return r;
+    }
+}
+
+</script>

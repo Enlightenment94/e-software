@@ -1,0 +1,5 @@
+https://www.npmjs.com/package/cryptico
+test.html
+
+https://github.com/travist/jsencrypt
+<script src='lib/jsencrypt-master/bin/jsencrypt.min.js'></script>

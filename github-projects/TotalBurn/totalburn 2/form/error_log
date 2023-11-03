@@ -1,0 +1,5 @@
+[19-Oct-2023 14:53:01 Europe/Warsaw] PHP Fatal error:  Cannot redeclare random() (previously declared in /home/p599816/public_html/TotalBurn2/php/func.php:25) in /home/p599816/public_html/TotalBurn2/humanTests/captcha.php on line 3
+[19-Oct-2023 14:54:32 Europe/Warsaw] PHP Fatal error:  Cannot redeclare random() (previously declared in /home/p599816/public_html/TotalBurn2/php/func.php:25) in /home/p599816/public_html/TotalBurn2/humanTests/captcha.php on line 3
+[19-Oct-2023 14:55:28 Europe/Warsaw] PHP Fatal error:  Cannot redeclare random() (previously declared in /home/p599816/public_html/TotalBurn2/php/func.php:25) in /home/p599816/public_html/TotalBurn2/humanTests/captcha.php on line 3
+[19-Oct-2023 14:55:29 Europe/Warsaw] PHP Fatal error:  Cannot redeclare random() (previously declared in /home/p599816/public_html/TotalBurn2/php/func.php:25) in /home/p599816/public_html/TotalBurn2/humanTests/captcha.php on line 3
+[19-Oct-2023 14:55:30 Europe/Warsaw] PHP Fatal error:  Cannot redeclare random() (previously declared in /home/p599816/public_html/TotalBurn2/php/func.php:25) in /home/p599816/public_html/TotalBurn2/humanTests/captcha.php on line 3

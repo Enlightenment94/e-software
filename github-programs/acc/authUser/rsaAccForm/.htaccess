@@ -1,0 +1,24 @@
+<Files *>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<FilesMatch "^(index)\.php$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(jsencrypt)\.min.js$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(style)\.css$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(logo)\.jpeg">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>

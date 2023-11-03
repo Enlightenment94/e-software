@@ -1,0 +1,3 @@
+Zapobiega przed przeskakiwanie div wrazie ustawiania zoom na stronie.
+max-width: 800px;
+min-width: 200px;

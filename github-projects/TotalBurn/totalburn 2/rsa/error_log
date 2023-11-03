@@ -1,0 +1,189 @@
+[17-Oct-2023 21:59:37 Europe/Warsaw] PHP Warning:  require_once(../form/static.php): failed to open stream: No such file or directory in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[17-Oct-2023 21:59:37 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required '../form/static.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[17-Oct-2023 22:21:33 Europe/Warsaw] PHP Warning:  require_once(../form/static.php): failed to open stream: No such file or directory in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[17-Oct-2023 22:21:33 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required '../form/static.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[17-Oct-2023 22:23:00 Europe/Warsaw] PHP Warning:  require_once(../form/static.php): failed to open stream: No such file or directory in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[17-Oct-2023 22:23:00 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required '../form/static.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[17-Oct-2023 22:28:33 Europe/Warsaw] PHP Warning:  require_once(../form/static.php): failed to open stream: No such file or directory in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[17-Oct-2023 22:28:33 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required '../form/static.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[17-Oct-2023 22:28:43 Europe/Warsaw] PHP Warning:  require_once(../form/static.php): failed to open stream: No such file or directory in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[17-Oct-2023 22:28:43 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required '../form/static.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[18-Oct-2023 13:25:33 Europe/Warsaw] PHP Warning:  require_once(../form/static.php): failed to open stream: No such file or directory in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[18-Oct-2023 13:25:33 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required '../form/static.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[18-Oct-2023 13:28:29 Europe/Warsaw] PHP Warning:  require_once(../form/static.php): failed to open stream: No such file or directory in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[18-Oct-2023 13:28:29 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required '../form/static.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[18-Oct-2023 13:29:51 Europe/Warsaw] PHP Warning:  require_once(../form/static.php): failed to open stream: No such file or directory in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[18-Oct-2023 13:29:51 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required '../form/static.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[18-Oct-2023 13:30:14 Europe/Warsaw] PHP Warning:  require_once(../form/static.php): failed to open stream: No such file or directory in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[18-Oct-2023 13:30:14 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required '../form/static.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/TotalBurn2/rsa/rsaLogin.php on line 4
+[18-Oct-2023 15:31:55 Europe/Warsaw] PHP Notice:  Undefined variable: findUser in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 221
+[18-Oct-2023 21:57:13 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 327
+[18-Oct-2023 21:57:13 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 21:57:13 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 334
+[18-Oct-2023 21:57:20 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 327
+[18-Oct-2023 21:57:20 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 21:57:20 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 334
+[18-Oct-2023 21:57:26 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 327
+[18-Oct-2023 21:57:26 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 21:57:26 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 334
+[18-Oct-2023 21:57:29 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 327
+[18-Oct-2023 21:57:29 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 21:57:29 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 334
+[18-Oct-2023 21:58:29 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 327
+[18-Oct-2023 21:58:29 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 21:58:29 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 334
+[18-Oct-2023 22:01:12 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 327
+[18-Oct-2023 22:01:12 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:01:12 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 334
+[18-Oct-2023 22:02:30 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 322
+[18-Oct-2023 22:02:36 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 322
+[18-Oct-2023 22:02:52 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:02:52 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:02:52 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:02:56 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:02:56 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:02:56 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:02:56 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:02:56 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:02:56 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:02:56 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:02:56 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:02:56 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:03:01 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:03:01 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:03:01 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:03:04 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:03:04 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:03:04 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:03:05 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:03:05 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:03:05 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:03:13 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:03:13 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:03:13 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:03:37 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:03:37 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:03:37 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:03:40 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:03:40 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:03:40 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:03:40 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:03:40 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:03:40 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:03:41 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:03:41 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:03:41 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:03:41 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:03:41 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:03:41 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:03:46 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:03:46 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:03:46 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:04:03 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:04:03 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:04:03 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[18-Oct-2023 22:04:55 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:04:55 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:04:55 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:05:46 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:05:46 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:05:46 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:05:47 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:05:47 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:05:47 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:05:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:05:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:05:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:05:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:05:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:05:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:05:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:05:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:05:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:05:49 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:05:49 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:05:49 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:06:43 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:06:43 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:06:43 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:06:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:06:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:06:48 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:06:53 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:06:53 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:06:53 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:06:53 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:06:53 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:06:53 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:06:53 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:06:53 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:06:53 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:07:52 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:07:52 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:07:52 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:08:01 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 329
+[18-Oct-2023 22:08:01 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 331
+[18-Oct-2023 22:08:01 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 336
+[18-Oct-2023 22:08:26 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 328
+[18-Oct-2023 22:08:26 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 330
+[18-Oct-2023 22:08:26 Europe/Warsaw] PHP Notice:  Undefined variable: deleteChat in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 335
+[19-Oct-2023 10:32:07 Europe/Warsaw] PHP Notice:  Undefined variable: chatName in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 378
+[19-Oct-2023 10:32:07 Europe/Warsaw] PHP Notice:  Undefined variable: chatName in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 380
+[19-Oct-2023 10:32:07 Europe/Warsaw] PHP Notice:  Undefined variable: chatName in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 385
+[19-Oct-2023 10:32:53 Europe/Warsaw] PHP Notice:  Undefined variable: chatName in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 378
+[19-Oct-2023 10:32:53 Europe/Warsaw] PHP Notice:  Undefined variable: chatName in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 380
+[19-Oct-2023 10:32:53 Europe/Warsaw] PHP Notice:  Undefined variable: chatName in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 385
+[19-Oct-2023 10:41:55 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 304
+[19-Oct-2023 10:44:23 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 304
+[19-Oct-2023 10:48:20 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:48:29 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:48:30 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:48:31 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:48:46 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:48:47 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:48:47 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:53:56 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:54:05 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:54:20 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:54:24 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 10:56:24 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 11:12:04 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 304
+[19-Oct-2023 11:12:06 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 11:12:11 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 11:12:16 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 11:12:21 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:46:15 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:46:20 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:46:20 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 17:46:25 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:46:30 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:46:35 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:46:36 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/checkHowManyMessages.php on line 12
+[19-Oct-2023 17:46:40 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:46:45 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:46:50 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:46:56 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:47:00 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 17:56:55 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 304
+[19-Oct-2023 17:57:47 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 304
+[19-Oct-2023 18:52:55 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 304
+[19-Oct-2023 18:52:56 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 18:53:02 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 304
+[19-Oct-2023 18:53:10 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 304
+[19-Oct-2023 18:53:21 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 304
+[19-Oct-2023 19:24:49 Europe/Warsaw] PHP Notice:  Undefined index: username in /home/p599816/public_html/TotalBurn2/rsa/rsaRequest.php on line 460
+[19-Oct-2023 22:12:48 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/readMsg.php on line 12
+[19-Oct-2023 22:12:48 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:13:00 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:13:11 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:13:22 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:13:33 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:13:44 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:13:56 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:14:07 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:14:18 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:14:28 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:14:38 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:14:48 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:14:59 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11
+[19-Oct-2023 22:15:10 Europe/Warsaw] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/p599816/public_html/TotalBurn2/sql/selectMessages.php on line 11

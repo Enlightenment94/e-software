@@ -1,0 +1,13 @@
+<pre>Konstruktory tworząc obiekt wymagana jest inicjacja zmiennych. Konstruktor to funkcja, która jest wykonywana przy tworzeniu obiekty.
+#PHP
+
+#C++
+
+#JAVA
+Object obj = new Object(); //<-- konstruktor
+super w java służy do wywołania konstruktora klasy dziedziczącej.
+
+Źródła:
+https://javastart.pl/baza-wiedzy/programowanie-obiektowe/konstruktory
+https://javastart.pl/baza-wiedzy/programowanie-obiektowe/dziedziczenie-i-konstrukcja-super
+</pre>

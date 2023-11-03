@@ -1,0 +1,125 @@
+#chatName{
+
+}
+
+#window{
+    overflow-y: scroll; 
+    height: 300px;
+    border: black solid 1px;
+    width: 228px;
+}
+
+#message{
+
+}
+
+#myPublicKey{
+    display: none;
+}
+
+#reciverPublicKey{
+    display: none;
+}
+
+
+
+
+
+body{
+    margin: 0;
+    color: white;
+}
+
+
+
+
+#banner{
+    height: 0;
+    background-color: #212121;
+    color: white;
+    font-size: 30px;
+}
+
+
+span{
+    text-align: center;
+    font-size: 32px;
+}
+
+#body{
+    height: 100%;
+    margin: 0px;
+    background: rgba(205, 205, 205, .3);
+    overflow: hidden;
+}
+
+img{
+    border-radius: 50%;
+    border: 5px crimson solid;
+}
+
+img:hover{
+    border: 3px white solid;
+}
+
+#console{
+    margin: 0 auto;
+    width: 600px;
+}
+
+#content{
+}
+
+
+
+#footer{
+    height: 0;
+    background-color: #212121;
+    margin: 0;
+}
+
+
+
+#matrix{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: fixed; 
+}
+
+
+.button-chat {
+  background-color: inherit;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
+}
+
+.find{
+  width: 100px;
+}
+
+.get-chats{
+  width: 100px;
+}
+
+.button-chat:hover {background: rgba(205, 205, 205, .3);}
+
+input{
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+
+a{
+    color: white;
+}
+
+a:hover{color: rgba(205, 205, 205, .3);}

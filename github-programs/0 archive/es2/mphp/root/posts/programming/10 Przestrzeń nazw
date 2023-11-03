@@ -1,0 +1,18 @@
+<pre> 
+
+#C++
+
+#JAVA
+package mypack;
+
+class MyPackageClass {
+  public static void main(String[] args) {
+    System.out.println("This is my package!");
+  }
+}
+
+Źródła:
+https://www.fuw.edu.pl/~werner/pmn/CPP_HTML/CPP_files/node147.html
+https://pl.wikipedia.org/wiki/Przestrze%C5%84_nazw
+https://www.w3schools.com/java/ref_keyword_package.asp
+</pre>

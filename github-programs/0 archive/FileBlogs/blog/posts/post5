@@ -1,0 +1,5 @@
+<pre>
+<a class='aCtn' href='https://www.php.net/manual/en/function.unlink.php'>https://www.php.net/manual/en/function.unlink.php</a>
+
+unlink(fileToDelete);
+<pre>

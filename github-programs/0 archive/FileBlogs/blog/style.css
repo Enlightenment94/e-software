@@ -1,0 +1,52 @@
+body{
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+        
+a{
+    color: #ccc;
+}
+
+a:hover{
+    color: white;
+}
+
+.aCtn{
+    color: black;
+}
+
+.aCtn:hover{
+    color: #793862;
+}
+    
+#banner{
+    width: 100%;
+    height: 200px;
+    background-image: url("phpBanner.jpeg");
+    background-color: #cccccc;
+}
+    
+#menu{
+    width: 300px;
+    background-color: #793862;
+    border-right: 5px solid #ccc;
+    border-bottom: 5px solid gray;
+    color: #ccc;
+    float: left;
+}
+        
+#content{
+    background-color: #F2F2F2;
+    width: 800px;
+    margin-left: 10px;
+    float: left;
+    padding: 10px;
+}
+        
+#foot{
+}
+    
+.ulMenu{
+}
+

@@ -1,0 +1,5 @@
+<pre>Dziedziczenie, często składa się tak, że chcemy skorzystać z funkcji już wcześniej napisanych w takim wypadtku nie musimy ich przepisywać do nowej klasy może je dziedziczyć w języku Java dziedziczy się poprzez słowo extends.
+
+Źródła:
+https://www.w3schools.com/java/ref_keyword_extends.asp
+</pre>

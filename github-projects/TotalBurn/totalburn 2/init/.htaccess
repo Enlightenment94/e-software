@@ -1,0 +1,11 @@
+# Zablokowanie wszystkich plików
+<Files *>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Zezwolenie na wykonywanie konkretnych plików
+<FilesMatch "^(createUserTable|users)\.php$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>

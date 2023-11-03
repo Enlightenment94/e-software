@@ -1,0 +1,15 @@
+<pre><?php
+$line = trim(fgets(STDIN)); // reads one line from STDIN
+fscanf(STDIN, "%d\n", $number); // reads number from STDIN
+?>
+
+<?php
+$stdout = fopen('php://stdout', 'w');
+?>
+
+<?php
+$stderr = fopen('php://stderr', 'w');
+?>
+Źródło:
+https://www.php.net/manual/en/features.commandline.io-streams.php
+</pre>

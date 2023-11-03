@@ -1,0 +1,15 @@
+<pre>
+for(i=0; i < 0; i++){
+//najpierw sprawdza i < 0
+}
+
+while(){
+//najpierw sprawdza while()
+} 
+
+do{
+//najpierw wykonuje potem sprawdza while()
+}while();
+
+Źródła:
+</pre>

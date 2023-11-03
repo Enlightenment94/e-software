@@ -1,0 +1,2 @@
+[09-Oct-2023 12:42:35 Europe/Warsaw] PHP Warning:  file_get_contents(private.key): failed to open stream: No such file or directory in /home/p599816/public_html/rsaJsPhp/rsaDecrypt.php on line 61
+[09-Oct-2023 12:42:35 Europe/Warsaw] PHP Warning:  openssl_private_decrypt(): key parameter is not a valid private key in /home/p599816/public_html/rsaJsPhp/rsaDecrypt.php on line 51

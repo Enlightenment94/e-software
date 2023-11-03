@@ -1,0 +1,20 @@
+sudo apt install ssmtp
+sudo apt install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules
+
+sudo nano /etc/postfix/main.cf
+relayhost =[smtp.gamil.com]:587
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options =noanonymous
+smtp_tls_CAfile = /etc/postfix/cacert.pem
+smtp_use_tls = yes
+
+sudo nano /etc/postfix/sasl_passwd
+[smtp.gmail.com]:587 unix425@gmail.com:P:unixPass42
+sudo chmod 777 /etc/postfix/sasl_passwd
+sudo postmap /etc/postfix/sasl_passwd
+sudo rm -f /etc/postfix/sasl_passwd
+
+cat /etc/ssl/cert/thawte_Primary_Root_CA.pem | sudo tee -a /etc/postfix/cacert.pem
+sudo systemctl reload postfix.service
+echo " test mail"| mail -s "test mail enlightenment@gmail.com

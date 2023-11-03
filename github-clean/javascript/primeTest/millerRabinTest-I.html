@@ -1,0 +1,121 @@
+<script>
+// Javascript program Miller-Rabin primality test
+// based on JavaScript code found at https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/
+
+// Utility function to do
+// modular exponentiation.
+// It returns (x^y) % p
+function genRandomNumber(len) {
+    var nums = "0123456789";
+    var rand;
+    var res = "";
+    var i = 0;
+    let min = 1;
+    let max = len;
+    let randomLength = Math.floor(Math.random() * (max - min)) + min;
+    for(i = 0; i < randomLength; i++){
+        rand = Math.floor(Math.random() * 10);
+        res += nums[rand];
+    }
+    return res;
+}
+
+function modPow(x, y, p){
+    // Initialize result
+    let res = 1n;
+     
+    // Update x if it is more than or
+    // equal to p
+    x = x % p;
+    while (y > 0n){
+         
+        // If y is odd, multiply
+        // x with result
+        if (y & 1n)
+            res = (res * x) % p;
+ 
+        // y must be even now
+        y = y >> 1n; // y = y/2
+        x = (x * x) % p;
+    }
+    return res;
+}
+
+function millerRabinTest(d, n){
+     
+    // Pick a random number in [2..n-2]
+    // Corner cases make sure that n > 4
+    // Math.floor(Math.random() * (n-2)) % (n - 4); wh
+    let a = BigInt(genRandomNumber(n.toString().length)); 
+    while( (n - 1n) <= 2n ||  n <= a ||  4n >= a ){
+        //console.log(n.toString().length);
+        a = BigInt(genRandomNumber(n.toString().length))
+    }
+
+    //console.log("millerRabinTest");
+    //console.log(a);
+    //console.log(d);
+    //console.log(n);
+
+    // Compute a^d % n
+    //let x = BigInt((a ** d) % n);
+    let x = modPow(a, d, n);    
+    //pow trzeba umieć zrobić na przesunięciach bitowych
+    //power(a, d, n);
+ 
+    if (x == 1n || x == n - 1n)
+        return true;
+ 
+    // Keep squaring x while one
+    // of the following doesn't
+    // happen
+    // (i) d does not reach n-1
+    // (ii) (x^2) % n is not 1
+    // (iii) (x^2) % n is not n-1
+
+    // Serce Millera Ribena
+    // Kiedy liczba jest prawdopodobnie pierwsza
+    while (d != n - 1n){
+        x = (x * x) % n;
+        d *= 2n; //zwielokratnia o 2 , 2 jest najniższą wielkoronością 2
+ 
+        if (x == 1n)    
+            return false;
+        if (x == n - 1n)
+              return true;
+    }
+ 
+    // Return composite
+    return false;
+}
+
+function checkPrime(n, k){    
+    // Warunki początkowe
+    if (n <= 1n || n == 4n) return false;
+    if (n <= 3n ) return true;
+ 
+    // Find r such that n =
+    // 2^d * r + 1 for some r >= 1
+    // Znalezienie najszego podziału dwójką 
+    // Najmniejsza wielkrotność 2
+    let d = n - 1n;
+    while (d % 2n == 0)
+        d /= 2n;
+
+    //Test Millera Rabina jest bardziej testem szukania przystości
+    //niż testem szukania pierwszości
+    for (let i = 0; i < k; i++)
+        if (!millerRabinTest(d, n))
+            return false;
+ 
+    return true;
+}
+
+console.log(checkPrime(BigInt(29), BigInt(30)));
+console.log(checkPrime(BigInt("67807"), BigInt(30))) //5
+console.log(checkPrime(BigInt("3337981063"), BigInt(30))); //10
+console.log(checkPrime(BigInt("66583543239391620797"), BigInt(30))); //20
+console.log(checkPrime(BigInt("651024764843786165231444194907"), BigInt(30)));//30
+console.log(checkPrime(BigInt("100000000000000000000000000000"), BigInt(30)));//30
+
+</script>

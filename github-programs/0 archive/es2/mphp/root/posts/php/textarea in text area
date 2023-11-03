@@ -1,0 +1,7 @@
+#How print textarea in textarea
+<textarea  cols='150' rows='30' form='area' name='tx'>
+<?php
+    echo "<pre><textarea>";
+    echo "</textarea></pre>";
+?>
+</textarea>

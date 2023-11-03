@@ -1,0 +1,22 @@
+<pre>Output systemy mają trzy przekierowania in - input wejścia, out - output wyjścia oraz err - błędu.
+
+Przekierowanie do strumienia wyjścia w Java uzywa się. 
+System.out.println("Hello World!");
+
+W php role strumienia wyjścia pełni strona używa się znacznika echo.
+echo "Hello world !!!";
+
+W c++ używa się znacznika cout
+cout << "Hello world !!!";
+
+Do obłsugi wejścia w Java używa się funkcji Scanner
+import java.util.Scanner;  // Import the Scanner class
+
+W C++ przykładowo
+char c;
+cin >> c;
+
+Źródła:
+https://www.w3schools.com/java/java_user_input.asp
+https://www.obliczeniowo.com.pl/345
+</pre>

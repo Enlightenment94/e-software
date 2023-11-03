@@ -1,0 +1,6 @@
+<pre>W Javie wszystkie obiekty dziedziczą po obiekcie Object.
+Object obj = new Object();
+
+Źródło:
+https://www.javatpoint.com/object-class
+</pre>

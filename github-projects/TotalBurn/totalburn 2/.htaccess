@@ -1,0 +1,55 @@
+<Files *>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<FilesMatch "^(index)\.php$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(jsencrypt)\.min.js$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(style)\.css$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(logo)\.jpeg">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+
+<FilesMatch "^(jsbn)\.js">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(random)\.js">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(hash)\.js">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(rsa)\.js">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(aes)\.js">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(api)\.js">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>

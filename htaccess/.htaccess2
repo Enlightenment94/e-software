@@ -1,0 +1,84 @@
+# BEGIN WordPress
+# Dyrektywy zawarte między "BEGIN WordPress" oraz "END WordPress"
+# są generowane dynamicznie i powinny być modyfikowane tylko za pomocą
+# filtrów WordPressa. Zmiany dokonane bezpośrednio tutaj będą nadpisywane.
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+#RewriteCond %{THE_REQUEST} ^.*(enlVir.php).* [NC]
+#RewriteRule ^(.*)$ - [F,L]
+#RewriteRule enlVir.php - [F]
+
+#Block z koncówką .php .js i [a-z]znaki nie wiem czy skuteczna ta 1  
+#Przydała by się też dostęp do plików
+#RewriteRule ^[a-z]+$ - [F]
+#Blokuje wszystkie php, ale allow potem nie działa
+#RewriteRule ^(.*.php)$ - [F]
+#RewriteRule ^(.*.js)$ - [F]
+#RewriteRule ^(*.appcloudmaster.*)$ - [F] 
+
+#TESTOWE
+#block 123 
+#RewriteRule ^123$ - [F]
+#blokuje abc ale wszystko ?=
+#RewriteCond %{QUERY_STRING} \babc\b [NC]
+#RewriteRule ^ - [F]
+
+#404 Wyświetlaj jako Forbriden
+
+
+#Lepiej formą regularną po końcówkach
+<files "xmlrpc.php">
+  Order allow,deny
+  Deny from all
+</files>
+
+<files "wp-config.php">
+  Order allow,deny
+  Deny from all
+</files>
+
+<files "wp-settings.php">
+  Order allow,deny
+  Deny from all
+</files>
+
+<files ~ "\.$">  
+  Order Allow,Deny
+  Deny from All
+</files>
+
+<files ~ "\.php$">  
+  Order Allow,Deny
+  Deny from All
+</files>
+
+
+<files "index.php">
+    Allow from all
+</files>
+
+<files "scanPossible.php">
+    Allow from all
+</files>
+
+<files "scanEdit.php">
+    Allow from all
+</files> 
+
+<files "scanDangFunc.php">
+    Allow from all
+</files>
+
+#AddOutputFilterByType SUBSTITUTE text/html
+#Substitute "s|(<a\s[^>]*)href=\"https?://([^/]+)(?<!www\.yourdomain\.com)/[^\"]*\"|$1href=\"http://www.yourdomain.com/your-fixed-#link\"|i"
+
+# END WordPress

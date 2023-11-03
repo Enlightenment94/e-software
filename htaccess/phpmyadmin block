@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^phpmyadmin/.*$ http://google.com [L,R=301]
+RewriteRule ^abcd*$ http://google.com [L,R=301]
+
+Redirect 301 /phpmyadmin https://www.google.com/
+Redirect 301 ^/phpmyadmin/.*$ https://www.google.com/
+
+Redirect 301 /abcd https://www.google.com/

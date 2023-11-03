@@ -1,0 +1,8 @@
+.postHeader:hover{
+    background: rgba(205,205,205,0.3);
+}
+
+.postHeader{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,16 @@
+# Zablokowanie wszystkich plików
+<Files *>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Zezwolenie na wykonywanie konkretnych plików
+<FilesMatch "^(aes|rsaIni|rsaLogin|rsaRegister|secretStatic35334543e62ds)\.php$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(private|public)\.key$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>

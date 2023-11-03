@@ -1,0 +1,77 @@
+<script>
+function mod(num, a){
+     
+    // Initialize result
+    let res = 0;
+ 
+    // One by one process
+    // all digits of 'num'
+    for(let i = 0; i < num.length; i++)
+        res = (res * 10 + parseInt(num[i])) % a;
+ 
+    return res;
+}
+
+function modulo( aNumStr, aDiv)
+{
+	var tmp = "";
+	var  i, r;
+	for ( i=0; i<aNumStr.length ; i++)
+	{
+		tmp += aNumStr.charAt( i);
+		r = tmp % aDiv;
+		tmp = r.toString( 10);
+	}
+	return tmp / 1;
+}
+
+var isPrime = 221;
+
+//12 mod 2 = 0, 12 mod 4 = 0, 12 mod 8 != 0. Zatem maksymalną potęgą dwójki dzielącą 12 jest 4, czyli 4=2s, s=2.
+//s - maksymalna potęga dwójki dzieląca n-1
+
+var temp = isPrime - 1; // n-1 
+var x = 2               // next temp
+var result = 0;
+var counter = 0
+
+for(;;){
+    result = temp % x;  
+    if(result == 0 ){
+        x +=x;
+        counter++
+    }else{
+        break;
+    }
+}
+console.log("n - 1: " +(isPrime - 1) + " x: " + x + " 2^" + counter);
+
+var s = counter; //potęga dwójki 2^s 
+var d = (isPrime - 1) / Math.pow(2, s);
+console.log(Math.pow(2, s));
+console.log( 2 + "^" + s + "*" + d);
+console.log("");
+
+var a = 174;
+//Rand a  (1 <  a  <  n - 1 )
+// 0 ≤ r < s 
+// a^(d*2^r)
+var r;
+var wyk1;
+var wyk0;
+var res;
+for(r = 0; r < counter; r++){
+    wyk1 = d * Math.pow(2, r);
+    wyk0 = Math.pow(a, wyk1);
+    //document.write(BigInt(wyk0) + "</br>");
+    document.write(BigInt(wyk0).toString() + "</br>");
+    res = mod(BigInt(wyk0).toString(), isPrime);
+    document.write(res + "</br>");
+    //res = modulo(BigInt(wyk0).toString(), isPrime);
+    //document.write(res + "</br>");
+    console.log(wyk0.toString() + " % " + isPrime.toString() +" = " + res);
+    console.log(a + "^" + d + "*2^" + r + " = " + wyk0);
+    console.log(a + "^" + d + "*2^" + r + " mod " + isPrime + " = " + res);
+}
+
+</script>

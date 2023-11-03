@@ -1,0 +1,16 @@
+# Zablokowanie wszystkich plików
+<Files *>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Zezwolenie na wykonywanie konkretnych plików
+<FilesMatch "^(logout|registerForm|dashboard)\.php$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(rsaCli|msg|messages|burn)\.js$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>

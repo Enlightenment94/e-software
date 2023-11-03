@@ -1,0 +1,27 @@
+<rec>
+	<afo_id>1</afo_id>
+	<afo>"Lepiej dobrą drogą chodź troszeczkę niż złą, a daleko."</afo>
+	<author>Platon</author>
+	<otxt></otxt>
+	<date>14-06-23 07:34:15</date>
+	<tag>Platon;</tag>
+</rec>
+
+<rec>
+	<afo_id>2</afo_id>
+	<afo>"Całość to coś więcej niż suma wszystkich elementów."</afo>
+	<author>Pitagoras</author>
+	<otxt>Tak właśnie</otxt>
+	<date>14-06-23 07:34:15</date>
+	<tag>Pitagoras;</tag>
+</rec>
+
+<rec>
+	<afo_id>3</afo_id>
+	<afo>"Wszystko należy upraszczać jak się da, ale nie bardziej."</afo>
+	<author>Albert Einstein</author>
+	<otxt>Upraszczanie to fundament doskonalenia i efektywne zarządzania energią.</otxt>
+	<date>14-06-23 07:34:15</date>
+	<tag>Albert Einstein;</tag>
+</rec>
+

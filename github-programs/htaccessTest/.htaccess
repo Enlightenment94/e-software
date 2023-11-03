@@ -1,0 +1,99 @@
+###BLOKOWANIE DOSTĘPU DO PLIKÓW DROGA I###
+
+#blokowanie pliku Forbidden!
+<Files "blocked">  
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+#blokowanie typu plików wszystke .type .bin .js
+<FilesMatch ".+\.(type|bin|js)$">
+  Order Allow,Deny
+  Deny from All
+</FilesMatch>
+
+<Files "\.(type|bin)$">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Files "*.cos">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Files "allow.type">
+  Allow from all
+</Files>
+###END###
+
+
+###BLOkOWANIE DOSTĘPU DO PLIKÓW DROGA II###
+RewriteEngine on
+
+#Wyjątki omijające blokowanie muszą być dodane przed RewriteRule
+RewriteRule ^htaccesTest/blockDir/allow$ - [L]
+
+#Blokowanie folderu, ale wnętrza już nie.
+#[F} Forbridden
+RewriteRule ^htaccesTest/blockDir/?$ - [F]
+
+#Blokowanie wszystkiego również zawartości
+RewriteRule ^htaccesTest/blockDir/(.+?)(-[0-9]+)?$ - [F,L]
+
+###END###
+
+
+###PRZEKIEROWANIA###
+
+#Prosty redirect /jump powoduje redirect do google.
+#[R] - redirect
+RewriteRule ^jump http://www.google.com [R]
+
+#Przekieruje wszystko /...
+RewriteRule ^htaccesTest/redirectDir/$ http://www.google.com [R]
+RewriteRule ^htaccesTest/redirectDir/(.+?)(-[0-9]+)?$ http://www.google.com [R]
+
+###END###
+
+
+###INNE###
+
+#+ Zablokowanie wyświetlania plików
+#Options -Indexes 
+
+# prevent display of select file types
+# blokowanie wyświetlania określonych typów
+#IndexIgnore *.wmv *.mp4 *.avi *.etc
+
+# serve alternate default index page
+# zmiana nazwy domyślnej strony indeksowej
+#DirectoryIndex business.html
+
+#Zablokowanie pobieranie sygnatury servera
+#ServerSignature Off
+
+###END###
+
+
+
+
+#######################################################
+###Wrongs###
+#Ponoć nie jest dowzowolne Directory w .htaccess 
+#<Directory "./htaccesTest/dirTest"
+#  <Files "FileInDir">
+#    Order allow,deny
+#    Deny from all
+#  </Files>
+#</Directory>
+
+#Przekierowanie
+#Nie działa
+#Redirect permanent /htaccesTest/redirect/ http://google.com 
+
+#<Location "">
+    #Order Allow,Deny
+    #Deny from all
+#</Location>
+

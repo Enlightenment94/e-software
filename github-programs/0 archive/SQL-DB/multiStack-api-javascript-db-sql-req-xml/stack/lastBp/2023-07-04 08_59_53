@@ -1,0 +1,50 @@
+
+<stack>
+	<stackName>Enl_blog</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>Zaczynam</note>
+		<otxt>Back up 
+
+w stack nie 
+działa.</otxt>
+		<date>04-07-23 08:59:07</date>
+		<tag>chaos;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>Day 2 - Stack nabiera dokładności</note>
+		<otxt>Lecimy</otxt>
+		<date>04-07-23 08:59:07</date>
+		<tag>chaos;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>IT</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>MySQL connection</note>
+		<otxt>Abcde</otxt>
+		<date>04-07-23 08:59:07</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>File</note>
+		<otxt>$fp itd</otxt>
+		<date>04-07-23 08:59:07</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>3</note_id>
+		<note>Print error</note>
+		<otxt>ini_displ</otxt>
+		<date>04-07-23 08:59:50</date>
+		<tag>php;</tag>
+	</rec>
+
+</stack>

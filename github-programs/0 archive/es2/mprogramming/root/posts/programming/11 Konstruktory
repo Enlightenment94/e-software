@@ -1,0 +1,5 @@
+<pre>Konstruktory tworząc obiekt wymagana jest inicjacja zmiennych. Konstruktor to funkcja, która jest wykonywana przy tworzeniu obiekty.
+
+Object obj = new Object(); //<-- konstruktor
+Źródła:
+</pre>

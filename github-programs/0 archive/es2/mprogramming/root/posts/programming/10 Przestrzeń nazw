@@ -1,0 +1,14 @@
+<pre>Przestrzeń nazw Java jest dośc prosty deklarujemy ją poprzez słowo package
+
+package mypack;
+
+class MyPackageClass {
+  public static void main(String[] args) {
+    System.out.println("This is my package!");
+  }
+}
+
+Źródła:
+https://pl.wikipedia.org/wiki/Przestrze%C5%84_nazw
+https://www.w3schools.com/java/ref_keyword_package.asp
+</pre>

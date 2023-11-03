@@ -1,0 +1,6 @@
+Why is the parent div height zero when it has floated children
+https://stackoverflow.com/questions/5369954/why-is-the-parent-div-height-zero-when-it-has-floated-children
+
+Ordinarily, floats aren't counted in the layout of their parents.
+
+To prevent that, add overflow: hidden to the parent.

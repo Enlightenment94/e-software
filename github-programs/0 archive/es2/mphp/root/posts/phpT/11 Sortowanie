@@ -1,0 +1,9 @@
+<pre>
+//sort(array &$array, int $flags = SORT_REGULAR): true
+
+$arr = array('2','4','9','3');
+sort($arr, SORT_NUMERIC);
+
+Źródła: 
+https://www.php.net/manual/en/function.sort.php
+</pre>

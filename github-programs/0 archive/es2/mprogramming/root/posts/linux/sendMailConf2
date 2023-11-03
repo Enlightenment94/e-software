@@ -1,0 +1,36 @@
+sudo apt install sendmail mailutils sendmail-bin 
+sudo dnf install sendmail
+sudo -i
+mkdir -m 700 /etc/mail/authinfo/
+cd /etc/mail/authinfo/
+nano gmail-auth
+
+> AuthInfo: "U:root" "I:unix425@gmail.com" "P:unixPass42"
+
+makemap hash gmail-auth < gmail-auth
+nano /etc/mail/sendmail.mc
+
+>
+define(`SMART_HOST',`[smtp.gmail.com]')dnl
+define(`RELAY_MAILER_ARGS', `TCP $h 587')dnl
+define(`ESMTP_MAILER_ARGS', `TCP $h 587')dnl
+define(`confAUTH_OPTIONS', `A p')dnl
+TRUST_AUTH_MECH(`EXTERNAL DIGEST-MD5 CRAM-MD5 LOGIN PLAIN')dnl
+define(`confAUTH_MECHANISMS', `EXTERNAL GSSAPI DIGEST-MD5 CRAM-MD5 LOGIN PLAIN')dnl
+FEATURE(`authinfo',`hash -o /etc/mail/authinfo/gmail-auth.db')dnl
+
+make -C /etc/mail
+systemctl restart sendmail
+systemctl status sendmail
+
+nano etc/host
+
+>
+127.0.0.1       localhost.localdomain localhost debian
+127.0.1.1       debian
+
+https://linuxconfig.org/sendmail-unqualified-hostname-unknown-sleeping-for-retry-unqualified-hostname
+
+echo "Just testing my sendmail gmail relay" | mail -s "Sendmail gmail Relay" enlightenmentsoftware@gmail.com
+
+

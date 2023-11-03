@@ -1,0 +1,14 @@
+<pre>#PHP
+$aFew = 4;
+$some = 4;
+$many = "4";
+if($some === $many ){  
+   echo "false";
+}
+if($some === $aFew ){
+   echo "true";
+}
+
+Źródła:
+https://www.educative.io/answers/difference-between-the-and-operators-in-php
+</pre>

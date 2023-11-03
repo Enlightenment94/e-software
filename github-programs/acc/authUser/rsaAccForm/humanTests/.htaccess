@@ -1,0 +1,16 @@
+# Zablokowanie wszystkich plików
+<Files *>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Zezwolenie na wykonywanie konkretnych plików
+<FilesMatch "^(captcha|captcha2)\.php$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^(captcha)\.png$">
+    Order Deny,Allow
+    Allow from all
+</FilesMatch>

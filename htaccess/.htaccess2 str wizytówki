@@ -1,0 +1,47 @@
+# BEGIN WordPress
+# Dyrektywy zawarte między "BEGIN WordPress" oraz "END WordPress"
+# są generowane dynamicznie i powinny być modyfikowane tylko za pomocą
+# filtrów WordPressa. Zmiany dokonane bezpośrednio tutaj będą nadpisywane.
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+#Lepiej formą regularną po końcówkach
+<files "xmlrpc.php">
+  Order allow,deny
+  Deny from all
+</files>
+
+<files "wp-config.php">
+  Order allow,deny
+  Deny from all
+</files>
+
+<files "wp-settings.php">
+  Order allow,deny
+  Deny from all
+</files>
+
+<files ~ "\.$">  
+  Order Allow,Deny
+  Deny from All
+</files>
+
+<files ~ "\.php$">  
+  Order Allow,Deny
+  Deny from All
+</files>
+
+<files "index.php">
+    Allow from all
+</files>
+
+RewriteEngine On
+RewriteRule ^phpmyadmin/.*$ http://google.com [L,R=301]

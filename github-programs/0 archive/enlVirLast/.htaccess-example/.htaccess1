@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^.*\.(php|bin|ott)$ - [NC,F] 

@@ -1,0 +1,86 @@
+
+<stack>
+	<stackName>Enl_blog</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>Zaczynam</note>
+		<otxt>Back up 
+
+w stack nie 
+działa.</otxt>
+		<date>04-07-23 10:00:52</date>
+		<tag>chaos;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>Day 2 - Stack nabiera dokładności</note>
+		<otxt>Lecimy</otxt>
+		<date>04-07-23 10:00:52</date>
+		<tag>chaos;</tag>
+	</rec>
+
+</stack>
+<stack>
+	<stackName>IT</stackName>
+	<rec>
+		<note_id>1</note_id>
+		<note>MySQL connection</note>
+		<otxt>$conn = new mysqli($GLOBALS['servername'], $GLOBALS['username'], $GLOBALS['password'], $GLOBALS['dbname']);
+
+if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+}else {
+	$sql = "SHOW TABLES";
+
+	$res = $conn->query($sql);
+	if($res === TRUE){
+		if ($res->num_rows > 0) {
+        		while($row = $res->fetch_assoc()) {
+                        }
+		}
+	}else {
+		die("Connection failed: " . $conn->connect_error);
+	}		
+}
+$conn->close();
+
+</otxt>
+		<date>04-07-23 10:00:52</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>2</note_id>
+		<note>File</note>
+		<otxt>$fp itd</otxt>
+		<date>04-07-23 10:00:52</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>3</note_id>
+		<note>Print error</note>
+		<otxt>ini_displ</otxt>
+		<date>04-07-23 10:00:52</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>4</note_id>
+		<note>Insert special characters in zapytanie</note>
+		<otxt>https://www.sitepoint.com/community/t/mysql-real-escape-string-not-working/5595/2</otxt>
+		<date>04-07-23 10:00:52</date>
+		<tag>php;</tag>
+	</rec>
+
+	<rec>
+		<note_id>5</note_id>
+		<note>Image print from varriable</note>
+		<otxt>https://stackoverflow.com/questions/3967515/how-to-convert-an-image-to-base64-encoding
+</otxt>
+		<date>04-07-23 10:01:01</date>
+		<tag>php;</tag>
+	</rec>
+
+</stack>

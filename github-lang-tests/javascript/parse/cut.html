@@ -1,0 +1,5 @@
+<script>> 
+           const readTimeArr = responseText.match(/<read_time>(.*?)<\/read_time>/g).map(function(val){
+                return val.replace("<read_time>", "").replace("</read_time>", "");
+            });
+</script>

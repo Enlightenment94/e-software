@@ -1,0 +1,35 @@
+body{
+    background-image: url('background.jpeg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: #cccccc;
+}
+
+.gallery{
+    max-width: 660px;
+    margin: 0 auto;
+    color: white;
+    background: rgba(205, 205, 205, .8);
+    text-shadow: 2px 2px gray;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px;
+    min-height: 100px;
+    overflow: hidden; 
+}
+
+.box{
+    margin: 5px;
+    padding: 5px;
+    float: left;
+}
+
+.img{
+
+}
+
+.id{
+}
+
+.created{
+}

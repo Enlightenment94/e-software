@@ -1,0 +1,4 @@
+[19-Oct-2023 19:34:06 Europe/Warsaw] PHP Warning:  require_once(humanTests/captcha.php): failed to open stream: No such file or directory in /home/p599816/public_html/authUser/rsaAccForm/form/registerForm.php on line 5
+[19-Oct-2023 19:34:06 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required 'humanTests/captcha.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/authUser/rsaAccForm/form/registerForm.php on line 5
+[19-Oct-2023 19:34:09 Europe/Warsaw] PHP Warning:  require_once(humanTests/captcha.php): failed to open stream: No such file or directory in /home/p599816/public_html/authUser/rsaAccForm/form/registerForm.php on line 5
+[19-Oct-2023 19:34:09 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required 'humanTests/captcha.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/authUser/rsaAccForm/form/registerForm.php on line 5

@@ -1,0 +1,15 @@
+.button-del{
+    width: 50px;
+    background: rgba(105, 255, 105, 0.6);
+    text-shadow: 1px 1px rgb(105 205 105 / 60%);
+}
+
+.fire{
+    font-size: 8px;
+    color: #f5f5f5;
+    text-shadow:
+    0px -2px 4px #fff,
+    0px -2px 10px #FF3,
+    0px -10px 20px #F90,
+    0px -20px 40px #C33;
+}

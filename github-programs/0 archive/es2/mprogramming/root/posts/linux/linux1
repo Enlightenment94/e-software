@@ -1,0 +1,10 @@
+#cd - current directory
+cd ./
+cd ../
+
+#uninstall program
+snap remove
+apt remove (program name)
+
+#find
+find /path -iname *.html

@@ -1,0 +1,379 @@
+<script>
+// Javascript program Miller-Rabin primality test
+// based on JavaScript code found at https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/
+
+// Utility function to do
+// modular exponentiation.
+// It returns (x^y) % p
+function power(x, y, p){
+	
+	// Initialize result 
+    // (JML- all literal integers converted to use n suffix denoting BigInt)
+	let res = 1n;
+	
+	// Update x if it is more than or
+	// equal to p
+	x = x % p;
+	while (y > 0n){
+		
+		// If y is odd, multiply
+		// x with result
+		if (y & 1n)
+			res = (res*x) % p;
+
+		// y must be even now
+		y = y/2n; // (JML- original code used a shift operator, but division is clearer)
+		x = (x*x) % p;
+	}
+	return res;
+}
+
+
+// This function is called
+// for all k trials. It returns
+// false if n is composite and
+// returns false if n is
+// probably prime. d is an odd
+// number such that d*2<sup>r</sup> = n-1
+// for some r >= 1
+function miillerTest(d, n){
+    // (JML- all literal integers converted to use n suffix denoting BigInt)
+	
+	// Pick a random number in [2..n-2]
+	// Corner cases make sure that n > 4
+    /* 
+        JML- I can't mix the Number returned by Math.random with
+        operations involving BigInt. The workaround is to create a random integer 
+        with precision 6 and convert it to a BigInt.
+    */  
+    const r = BigInt(Math.floor(Math.random() * 100_000))
+    // JML- now I have to divide by the multiplier used above (BigInt version)
+    const y = r*(n-2n)/100_000n
+	let a = 2n + y % (n - 4n);
+
+	// Compute a^d % n
+	let x = power(a, d, n);
+
+	if (x == 1n || x == n-1n)
+		return true;
+
+	// Keep squaring x while one
+	// of the following doesn't
+	// happen
+	// (i) d does not reach n-1
+	// (ii) (x^2) % n is not 1
+	// (iii) (x^2) % n is not n-1
+	while (d != n-1n){
+		x = (x * x) % n;
+		d *= 2n;
+
+		if (x == 1n)	
+			return false;
+		if (x == n-1n)
+			return true;
+	}
+
+	// Return composite
+	return false;
+}
+
+// It returns false if n is
+// composite and returns true if n
+// is probably prime. k is an
+// input parameter that determines
+// accuracy level. Higher value of
+// k indicates more accuracy.
+function isPrime( n, k=40){
+	// (JML- all literal integers converted to use n suffix denoting BigInt)
+	// Corner cases
+	if (n <= 1n || n == 4n) return false;
+	if (n <= 3n) return true;
+
+	// Find r such that n =
+	// 2^d * r + 1 for some r >= 1
+	let d = n - 1n;
+	while (d % 2n == 0n)
+		d /= 2n;
+
+	// Iterate given nber of 'k' times
+	for (let i = 0; i < k; i++)
+		if (!miillerTest(d, n))
+			return false;
+
+	return true;
+}
+
+function genRandomNumber(len) {
+    var nums = "0123456789";
+    var rand;
+    var res = "";
+    var i = 0;
+    for(i = 0; i < len; i++){
+        rand = Math.floor(Math.random() * 10);
+        res += nums[rand];
+    }
+    return res;
+}
+
+function getRandomPrime(len){
+    var bigNumber;
+    for(;;){
+        bigNumber = genRandomNumber(len);
+        if(true == isPrime(BigInt(bigNumber))){
+            //console.log("Rand prime : " + bigNumber);
+            break;
+        }
+    }
+    return bigNumber;
+}
+
+function genLowNumber(len) {
+    var nums = "0";
+    var res = "1";
+    var i;
+    for(i = 1; i < len; i++){
+        res += nums[0];
+    }
+    return res;
+}
+
+/*
+console.log(isPrime(BigInt("690130691588903485397070281893")));
+console.log(isPrime(BigInt("690130691588903485397070281893")));
+console.log(isPrime(BigInt("100000000000000000000000000000")));
+var bigNumber = genRandomNumber(256);
+//console.log(bigNumber);
+//console.log(isPrime(BigInt(bigNumber)));
+console.log(isPrime(BigInt("4916179372319707751221948629412555504801304583034488914601010273493493841225079654155122637299290319490411628302632181064839829607152964482700092437707955326595094074631799918770466692425941229039908110783387555186984568590856483800426509152646927717038367")));
+console.log(isPrime(BigInt("116970756968284081571812835533247287683959055609508642567301262425633504269865757621800389519197830114396798385387251849146881700468231001947491967389622258239786404336476098866171946445865332977058059738533011412261220682502450211129063951307960282523209588068363044893719420681759791807671967656199")));
+
+for(;;){
+    bigNumber = genRandomNumber(256);
+    if(true == isPrime(BigInt(bigNumber))){
+        console.log(bigNumber);
+        break;
+    }
+}*/
+
+
+function gcdevisor(x, y) {
+  while(y) {
+    var t = y;
+    y = x % y;
+    x = t;
+  }
+  return x;
+}
+
+//generate key
+
+//Warunki początkowe
+//p i q randomowe pierwsze
+var p = BigInt(getRandomPrime(64));//BigInt(7);
+var q = BigInt(getRandomPrime(64));//BigInt(3);
+var n = BigInt(p * q);
+var euler = (p-BigInt(1))*(q-BigInt(1)); // φ(n) == euler
+console.log("p : " + p);
+console.log("q : " + q);
+console.log("n: " + n);
+console.log("euler: " + euler);
+
+// Generowanie
+var e = euler; //e (1 < e < φ(n))// e NWD with Euler = 1
+var d;  // ??? (d * euler) % fi == 1
+
+//Generator liczby e
+var eulerLength = euler.toString().length;
+console.log("Euler length: " + eulerLength);
+var lowNumber = genLowNumber(eulerLength);
+while(e >= euler || e <= lowNumber ){
+    e = BigInt(getRandomPrime(eulerLength));
+}
+console.log("lowNumber < e < euler ? " + lowNumber + " < " + e + " < " + euler);
+console.log("First e: " + e);
+
+function modInverse(a, m) {
+  // find the gcd
+    const s = []
+    let b = BigInt(m)
+    while(b) {
+        [a, b] = [b, a % b]
+        s.push({a, b})
+    }
+
+    if (a !== BigInt(1)) {
+        return NaN // inverse does not exists
+    }
+
+    // find the inverse
+    let x = BigInt(1)
+    let y = BigInt(0)
+    for(let i = BigInt(s.length - 2); i >= BigInt(0); --i) {
+        [x, y] = [y,  x - y * (s[i].a / s[i].b)]
+    }
+
+    return (y % m + m) % m
+}
+
+// Tests
+/*
+console.log(modInverse(1, 2))       // = 1
+console.log(modInverse(3, 6))       // = NaN
+console.log(modInverse(25, 87))     // = 7
+console.log(modInverse(7, 87))      // = 25
+console.log(modInverse(19, 1212393831))     // = 701912218
+console.log(modInverse(31, 73714876143))    // = 45180085378
+console.log(modInverse(3, 73714876143))     // = NaN
+console.log(modInverse(-7, 87))     // = 62
+console.log(modInverse(-25, 87))    // = 80
+console.log(modInverse(0, 3))       // = NaN
+console.log(modInverse(0, 0))*/ 
+console.log("d : " + modInverse(e, euler));
+
+/*
+
+For example you need to get d in the next:
+3*d = 1 (mod 9167368)
+
+this is equally:
+3*d = 1 + k * 9167368, where k = 1, 2, 3, ...
+
+rewrite it:
+d = (1 + k * 9167368)/3
+
+Your d must be the integer with the lowest k.
+Let's write the formula:
+d = (1 + k * fi) / e
+*/
+/*
+function multiplicativeInverse(e, fi) {
+    var result;
+    var k = BigInt(1);
+    while (true) {
+        result = ( BigInt(1) + (k * fi) ) / e;
+        if ((result % BigInt(1)) == BigInt(0)) {
+            return result;
+        } else {
+            k++;
+        }
+    }
+}
+console.log("e = " + e + " " + " euler = " + euler);
+console.log("d = " + multiplicativeInverse(e, euler));
+*/
+//Jak policzyć d?
+
+//Mod inverse coś słabo
+/*
+function modInverse(a, m){
+    for(let x = BigInt(1); x < m; x++)
+        if (((a % m) * (x % m)) % m == BigInt(1))
+            return x;
+}
+
+function multiplicativeInverse(e, fi) {
+    var result;
+    var k = BigInt(1);
+    while (true) {
+        result = (BigInt(1) + (k * fi)) / e;
+        if ((result % BigInt(1)) == BigInt(0)) {
+            return result;
+        } else {
+            k++;
+        }
+    }
+} */
+
+//65537
+//d * e == 1 modulo (p-1)(q-1) to nie możliwe d*e = 1
+
+//d=(1/e)modϕ really ???
+//To coś słabe
+//d = ( BigInt(1) / e ) % euler; 
+//console.log("( BigInt(1) / e ) % euler d = " + d);
+
+//Very long option
+//d = modInverse(e, euler);
+//console.log("modInverse d = " + d);
+
+/*
+d = multiplicativeInverse(BigInt(e), euler); // a tu działa hehe
+console.log("multiplicativeInverse d = " + d);
+console.log(multiplicativeInverse(BigInt(3), BigInt(9167368)) + " ?= " + BigInt(6111579))
+*/
+//dangerous options if choose public są I can brute force try K to refactory  
+//d = (1+K(phi))/e 
+
+//public key (n, e) privat key (n,d)
+
+//console.log(gcdevisor(10, 348));
+//console.log(gcdevisor(BigInt("10"), BigInt("348") ));
+//console.log(gcdevisor(BigInt(10), BigInt(348) ));
+//Stupid e finder
+//Czyli e też może być liczbą pierwszą liczba pierwsza dzieli się tylko przez siebie
+/*
+var counter = 0;
+while(1){
+    if(gcdevisor(e, euler) == BigInt(1)){
+        if(BigInt(1) < e < euler){
+            console.log("e found :" + e);
+            break;
+        }else{
+            while(e >= euler){
+                e = BigInt(getRandomPrime(eulerLength));
+            }
+        }
+    }
+    e++;
+    console.log(e);
+
+    counter++;
+    if(counter == 1000){
+        while(e >= euler){
+            e = BigInt(getRandomPrime(eulerLength));
+        }
+        counter = 0;
+    }
+}*/
+
+/*
+d = e;
+while(d >= euler || d <= lowNumber || d == e ){
+    d = BigInt(getRandomPrime(eulerLength));
+}*/
+
+//Generator liczby d
+//Przy 5 robi się problem
+//Brute force do długości p i q 4
+//brute force
+/*
+while(1){
+    if( ((d * e) % euler) == BigInt(1) ){
+        break;
+    }
+    d++;//brute force
+        //random force
+        //determist algorithm force
+        //probpably algorithm force
+}
+console.log(d);
+*/
+
+//Random force
+//Random force też sobie nie poradził potrzebny jest inny algorytm
+/*
+while(1){
+    if( ((d * e) % euler) == BigInt(1) ){
+        break;
+    }
+
+    while(d >= euler || d <= lowNumber || d == e ){
+        d = BigInt(getRandomPrime(eulerLength));
+    }
+
+    //determist algorithm force
+    //probpably algorithm force
+}*/
+
+//public key (n,e) privat key (n,d)
+</script>

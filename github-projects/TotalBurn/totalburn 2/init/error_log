@@ -1,0 +1,2 @@
+[17-Oct-2023 22:16:50 Europe/Warsaw] PHP Warning:  require_once(../form/static.php): failed to open stream: No such file or directory in /home/p599816/public_html/TotalBurn2/init/users.php on line 2
+[17-Oct-2023 22:16:50 Europe/Warsaw] PHP Fatal error:  require_once(): Failed opening required '../form/static.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/p599816/public_html/TotalBurn2/init/users.php on line 2

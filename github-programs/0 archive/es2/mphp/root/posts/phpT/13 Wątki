@@ -1,0 +1,6 @@
+<pre>Włączenie obsługi wątków wymaga modyfikacji php.ini, by był dozwolone.
+
+Źródła:
+https://www.php.net/manual/en/class.thread.php
+https://stackoverflow.com/questions/22901578/php-pthreads-fatal-error-class-thread-not-found
+</pre>

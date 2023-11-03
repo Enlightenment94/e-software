@@ -1,0 +1,2 @@
+require(); //nie akceptuje redeklaracji 1 na kod
+require_once(); //akceptuje redeklaracje

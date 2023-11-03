@@ -1,0 +1,5 @@
+phpMyAdmin - Error
+Wrong permissions on configuration file, should not be world writable!
+
+#Ważne by wpisywać komende z tego miejsca /
+sudo chmod 755 /opt/lampp/phpmyadmin/config.inc.php

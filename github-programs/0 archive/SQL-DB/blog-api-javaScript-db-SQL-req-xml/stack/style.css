@@ -1,0 +1,111 @@
+#nokey{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed; 
+}
+
+body{
+    color: rgba(205, 205, 205, 0.9);
+    background-color: #212121;
+    margin: 0;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#banner{
+    height: 100px;
+    padding-top: 30px;
+    background: rgb(50,55,55);
+    background: linear-gradient(0deg, rgba(25,25,25,0.8995973389355743) 0%, rgba(50,55,55,0.8239670868347339) 100%);
+    text-align: center;
+}
+
+#header{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+}
+
+#subHeader{
+    text-align: center;
+    font-size: 16px;
+}
+
+#git{
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+a{
+    color: white
+}
+
+a:hover{
+    color: rgba(205, 205, 205, 0.9);
+}
+
+#image{
+    text-align: center;
+    padding: 20px;
+}
+#image img{
+    border: 3px solid rgba(205, 205, 255, .3);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+#content{
+    margin: 0 auto;
+    width: 500px;
+}
+
+#logo{
+
+}
+
+#about{
+
+}
+
+#statistic{
+
+}
+
+#footer{
+    padding-top: 30px;
+    margin-top: 50px;
+    height: 100px;
+    background: rgb(50,55,55);
+    background: linear-gradient(0deg, rgba(25,25,25,0.8995973389355743) 0%, rgba(50,55,55,0.8239670868347339) 100%);
+    text-align: center;
+}
+
+#documentation{
+    
+}
+
+
+#addWindow{
+    width: 600px;
+    margin: 0 auto;
+    display: none;
+}
+
+textarea{
+    background: transparent;
+    color: rgba(205, 205, 205, 0.9);
+}
+
+#headerAdd{
+    width: 100%;
+}
+
+#postAdd{
+    width: 100%;
+    height: 300px;
+}
+
