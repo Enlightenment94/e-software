@@ -1,0 +1,3 @@
+g++ screenMouse.cpp -o screenMouse `pkg-config --cflags --libs opencv4`
+g++ screenMouseDrag.cpp -o screenMouseDrag `pkg-config --cflags --libs opencv4`
+
